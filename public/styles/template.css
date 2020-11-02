@@ -1,0 +1,196 @@
+header {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: #fff;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+header .header-container {
+  margin: 0px auto;
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 0px;
+}
+
+header .header-container .header-logo {
+  width: 4%;
+}
+
+header .header-container .header-logo a {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+header .header-container .header-logo a img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+header .header-container .header-logo a:hover {
+  opacity: 0.75;
+}
+
+header .header-container .header-nav .header-nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-container .header-nav .header-nav-links a {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+header .header-container .header-nav .header-nav-links a li {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #97c8c9;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+header .header-container .header-nav .header-nav-links a:last-child {
+  margin-right: 0;
+}
+
+header .header-container .header-nav .header-nav-links a:hover li {
+  color: #5a7688;
+}
+
+footer {
+  border-top: 1px solid #e9e9e9;
+}
+
+footer .footer-container {
+  margin: 75px auto;
+  width: 85%;
+}
+
+footer .footer-container .footer-row-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+footer .footer-container .footer-row-1 .footer-page-links {
+  -ms-flex-preferred-size: 85%;
+      flex-basis: 85%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 0.75fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 0.75fr));
+  grid-gap: 25px;
+}
+
+footer .footer-container .footer-row-1 .footer-page-links .page-link h3 {
+  font-size: 24px;
+  color: #97c8c9;
+}
+
+footer .footer-container .footer-row-1 .footer-page-links .page-link .page-link-list {
+  margin: 1em 0;
+}
+
+footer .footer-container .footer-row-1 .footer-page-links .page-link .page-link-list li {
+  margin-bottom: 3px;
+}
+
+footer .footer-container .footer-row-1 .footer-social-links {
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-container .footer-row-1 .footer-social-links ion-icon {
+  background: #333;
+  padding: 20px;
+  border-radius: 50%;
+  color: #fff;
+  margin: 0px 5px;
+  font-size: 20px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  cursor: pointer;
+}
+
+footer .footer-container .footer-row-1 .footer-social-links ion-icon:hover {
+  background: #181818;
+}
+
+footer .footer-container .footer-row-2 {
+  position: relative;
+}
+
+footer .footer-container .footer-row-2 .footer-row-2-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+}
+
+footer .footer-container .footer-row-2 .footer-row-2-text .footer-leg a {
+  display: inline-block;
+  color: #aaaaaa;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+footer .footer-container .footer-row-2 .footer-row-2-text .footer-leg a:nth-child(2) {
+  margin: 0px 10px;
+}
+
+footer .footer-container .footer-row-2 .footer-row-2-text .footer-leg a:hover {
+  color: #333;
+}
+
+footer .footer-container .footer-row-2 .footer-row-2-text::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 0;
+  left: 0;
+  background: #e9e9e9;
+}
+/*# sourceMappingURL=template.css.map */
