@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ config('app.name', 'Cloud Copy') }} - Home of the best content quality</title>
 
     <link rel="icon" href="{{ asset('images/cloudcopy1.png') }}">
     <link rel="stylesheet" href="{{ asset('styles/global.css') }}">

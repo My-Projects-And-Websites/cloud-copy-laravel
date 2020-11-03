@@ -5,7 +5,7 @@
                 <div class="page-link">
                     <h3>Services</h3>
                     <ul class="page-link-list">
-                        <li>Something written</li>
+                        <li>What We Offer</li>
                         <li>Something written</li>
                         <li>Something written</li>
                         <li>Something written</li>

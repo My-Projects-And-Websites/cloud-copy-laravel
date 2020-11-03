@@ -18,3 +18,5 @@ Route::get('/about', 'App\Http\Controllers\PagesController@about');
 Route::get('/services', 'App\Http\Controllers\PagesController@services');
 Route::get('/contact', 'App\Http\Controllers\PagesController@contact');
 Route::get('/portfolio', 'App\Http\Controllers\PagesController@portfolio');
+
+Route::post('/sub', 'App\Http\Controllers\UserEmailsController@store');

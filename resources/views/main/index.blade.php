@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="{{ asset('styles/main/index/styles.css') }}">
+<title>{{ config('app.name', 'Cloud Copy') }} - Home of the best content quality</title>
 
 @extends('template')
 
@@ -18,11 +19,11 @@
             <div class="hero-img">
                 <div class="hero-img-container">
                     <div class="hero-img-slide">
-                        <img src="{{ asset('images/Excellence Office 2_Winch Media.jpg') }}" id="lastClone" alt="">
-                        <img src="{{ asset('images/Amels 60 (I)_ Winch Media.jpg') }}" alt="">
-                        <img src="{{ asset('images/Here Comes The Sun Office_Winch Media-min.jpg') }}" alt="">
-                        <img src="{{ asset('images/Excellence Office 2_Winch Media (1).jpg') }}" alt="">
-                        <img src="{{ asset('images/Amels 60 (I)_ Winch Media.jpg') }}" id="firstClone" alt="">
+                        <img src="{{ asset('images/carousel3.jpg') }}" id="lastClone" alt="">
+                        @foreach($images as $image)
+                        <img src="{{ $image }}" alt="Carousel images">
+                        @endforeach
+                        <img src="{{ asset('images/carousel1.jpg') }}" id="firstClone" alt="">
                     </div>
                 </div>
             </div>
@@ -54,7 +55,8 @@
     </section>
     <section class="newsletter">
         <h2><span>Subscribe</span> to our newsletter.</h2>
-        <form action="#">
+        <form action="{{ URL::to('/sub') }}" method="POST">
+            @csrf
             <input type="email" name="subEmail" placeholder="Enter email here...">
             <input type="submit" name="subButton">
         </form>

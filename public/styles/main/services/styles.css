@@ -1,1 +1,73 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+section.intro {
+  margin: 75px auto;
+  width: 85%;
+}
+
+section.intro .intro-heading {
+  font-size: 50px;
+  margin-bottom: 5px;
+  color: #97c8c9;
+}
+
+section.intro p {
+  font-size: 20px;
+  color: #333;
+}
+
+section.cloud-services {
+  margin: 0 auto 75px;
+  width: 80%;
+}
+
+section.cloud-services .cloud-service-links {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(500px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 30px;
+}
+
+section.cloud-services .cloud-service-links .cloud-service-links-container {
+  border-radius: 40px 0px 0px 0px;
+  height: 100%;
+}
+
+section.cloud-services .cloud-service-links .cloud-service-links-container .cloud-service-link-content {
+  margin: 15px 0px 0px 15px;
+  -webkit-box-shadow: 2px 5px 8px #ccc;
+          box-shadow: 2px 5px 8px #ccc;
+  padding: 25px;
+  height: 100%;
+}
+
+section.cloud-services .cloud-service-links .cloud-service-links-container .cloud-service-link-content h2 {
+  color: #5a7688;
+  text-shadow: 2px 2px 3px #f3f3f3;
+  margin-bottom: 8px;
+}
+
+section.cloud-services .cloud-service-links .cloud-service-links-container .cloud-service-link-content p {
+  color: #333;
+}
+
+section.cloud-services .cloud-service-links .cloud-service-links-container .cloud-service-link-content span {
+  display: inline-block;
+  margin: 15px 0px 0px;
+  line-height: 1.5;
+  color: #b6b6b6;
+  font-style: italic;
+  font-size: 13px;
+}
+
+section.cloud-services .cloud-service-links .cloud-service-links-container .cloud-service-link-content ul {
+  list-style-type: square;
+  margin-top: 1.5em;
+  padding-left: 40px;
+  width: 95%;
+}
+
+section.cloud-services .cloud-service-links .cloud-service-links-container .cloud-service-link-content ul li {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+/*# sourceMappingURL=styles.css.map */
