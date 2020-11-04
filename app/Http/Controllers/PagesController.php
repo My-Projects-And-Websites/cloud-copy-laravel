@@ -17,8 +17,36 @@ class PagesController extends Controller
     }
 
     public function about() {
+        $data['titles'] = [
+            'Let The Canary Fly Outside Its Cage',
+            'Content Is King',
+            'The Art of Curating Content'
+        ];
+
+        $data['contents'] = [
+            "When a company has limited free time to build and maintain a 
+            blog, we take care of it for them. After observing and talking 
+            to their canary, we will coax it out and provide it with a new 
+            lease of life. Only once the canary is set free, will companies 
+            prosper and reach their full potential.",
+            "New content attracts new clients. It is that simple! A digital presence 
+            is essential in ensuring that companies' expertise stands out from the 
+            competition. Sales messages need to evolve to remain relevant. A blog 
+            helps to ensure that companies are pushing the right buttons at all the 
+            right times. Content creation is essentially the beating pulse of your 
+            brand. Weekly blogs invite clients to listen to a company's views and 
+            understand where their skill sets and expertise lie. Most importantly, 
+            clients like to see how companies can resolve a range of businesses issues. 
+            The old marketing adage ‘Find and Solve Your Client's Problem’s’ never ceases 
+            to remain relevant. ",
+            "Cloud Copy copywriters are from a marketing background. Our strategic approach 
+            means that we don’t just write high-quality content; we also provide a strategic 
+            pitch when presenting content ideas. Content creation is a trail of breadcrumbs 
+            that should galvanise readers' interest to bring them back to the website time 
+            and time again. "
+        ];
         
-        return view('main.about');
+        return view('main.about', $data);
     }
 
     public function services() {

@@ -19,11 +19,9 @@
             <div class="hero-img">
                 <div class="hero-img-container">
                     <div class="hero-img-slide">
-                        <img src="{{ asset('images/carousel3.jpg') }}" id="lastClone" alt="">
                         @foreach($images as $image)
                         <img src="{{ $image }}" alt="Carousel images">
                         @endforeach
-                        <img src="{{ asset('images/carousel1.jpg') }}" id="firstClone" alt="">
                     </div>
                 </div>
             </div>

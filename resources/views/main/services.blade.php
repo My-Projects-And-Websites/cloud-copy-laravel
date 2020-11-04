@@ -4,12 +4,12 @@
 @extends('template')
 
 @section('content')
-    <section class="intro">
+    <section class="intro" data-aos="fade-right" data-aos-duration="1500">
         <h1 class="intro-heading">Clouds of Content</h1>
         <p>{{ trans($txt1) }}</p>
     </section>
     <section class="cloud-services">
-        <ul class="cloud-service-links">
+        <ul class="cloud-service-links" data-aos="fade-up" data-aos-duration="1500">
             <li class="cloud-service-links-container">
                 <div class="cloud-service-link-content">
                     <h2>Rain Cloud</h2>
@@ -57,4 +57,6 @@
             </li>
         </ul>
     </section>
+
+    <script src="{{ asset('js/ser_animate.js') }}"></script>
 @endsection

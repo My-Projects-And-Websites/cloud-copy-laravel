@@ -30,6 +30,7 @@ section.cloud-services .cloud-service-links {
 section.cloud-services .cloud-service-links .cloud-service-links-container {
   border-radius: 40px 0px 0px 0px;
   height: 100%;
+  width: 100%;
 }
 
 section.cloud-services .cloud-service-links .cloud-service-links-container .cloud-service-link-content {
