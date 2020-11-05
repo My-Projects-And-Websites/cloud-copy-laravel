@@ -14,11 +14,12 @@
                 </p>
             </div>
             <div class="contact-form">
-                <form action="{{ URL::to('') }}" method="POST">
+                <form action="{{ URL::to('/send') }}" method="POST">
                     <input type="text" name="queryName" placeholder="Name:">
                     <input type="email" name="queryEmail" placeholder="Email:">
                     <textarea name="queryText" placeholder="Message:"></textarea>
                     <input type="submit" name="querySubmit" value="Submit">
+                    @csrf
                 </form>
             </div>
         </section>

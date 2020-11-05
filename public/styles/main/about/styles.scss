@@ -1,19 +1,18 @@
 section {
-    margin: 75px auto 150px;
-    width: 85%;
+    padding: 0px 0px 150px;
     display: flex;
     align-items: center;
 }
 
 section.hero {
-    justify-content: space-evenly;
+    justify-content: space-between;
 
     .hero-text {
-        flex-basis: 45%;
+        flex-basis: 33%;
+        margin-left: 100px;
 
         h1 {
             font-size: 50px;
-            margin-bottom: 10px;
             color: #5a7688;
         }
 
@@ -21,11 +20,33 @@ section.hero {
             color: #333;
             font-size: 18px;
             text-align: justify;
+            margin: 10px 0px 20px;
+        }
+
+        .cta {
+
+            a {
+                display: inline-block;
+                padding: 15px 20px;
+                font-size: 16px;
+                color: #333;
+                border: 1px solid #333;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                transition: .4s;
+            }
+
+            a:hover {
+                background: #97c8c9;
+                color: #fff;
+                border-color: #97c8c9;
+                padding: 15px 30px;
+            }
         }
     }
 
     .hero-img {
-        flex-basis: 50%;
+        flex-basis: 55%;
 
         img {
             width: 100%;
@@ -35,6 +56,7 @@ section.hero {
 }
 
 section.row-about1 {
+    margin: 0 auto;
     width: 70%;
 
     .row-about1-text {
@@ -43,21 +65,25 @@ section.row-about1 {
             font-size: 38px;
             color: #5a7688;
             margin-bottom: 10px;
+            text-align: center;
         }
 
         p {
             font-size: 18px;
             color: #333;
+            text-align: justify;
+            text-align-last: center;
         }
     }
 }
 
 section.row-about2 {
-    justify-content: space-evenly;
+    justify-content: space-between;
 
     .row-about2-text {
-        flex-basis: 40%;
+        flex-basis: 33%;
         order: 2;
+        margin-right: 100px;
 
         h2 {
             font-size: 38px;
@@ -68,6 +94,7 @@ section.row-about2 {
         p {
             font-size: 18px;
             color: #333;
+            text-align: justify;
         }
     }
 

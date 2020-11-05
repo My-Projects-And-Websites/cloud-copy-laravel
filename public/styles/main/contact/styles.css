@@ -62,7 +62,6 @@ main section.contact .contact-form form input[type="submit"] {
   text-align: center;
   width: 25%;
   border: 1px solid #97c8c9;
-  display: block;
 }
 
 main section.contact .contact-form form input[type="submit"]:hover {

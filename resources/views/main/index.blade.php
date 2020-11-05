@@ -8,13 +8,15 @@
 
     <section class="hero">
         <div class="hero-container">
-            <div class="hero-heading">
-                <h1><span>Cloud Copy.</span> See you at nine.</h1>
-                <p>
-                    Cloud Copy creates content to strengthen businesses' brand 
-                    proposition.
-                </p>
-                <span id="quote">Start your conversation with eloquence</span>
+            <div class="hero-text">
+                <div class="hero-heading">
+                    <h1><span>Cloud Copy.</span> See you at nine.</h1>
+                    <p>
+                        Cloud Copy creates content to strengthen businesses' brand 
+                        proposition.
+                    </p>
+                    <span id="quote">Start your conversation with eloquence</span>
+                </div>
             </div>
             <div class="hero-img">
                 <div class="hero-img-container">
@@ -47,6 +49,12 @@
                     @else
                         <p>Nothing to display.</p>
                     @endif
+                    <a href="{{ URL::to('/services') }}" id="service-cta">
+                        <li class="last-list-item">
+                            <h3 class="last-h3">View Services</h3>
+                            <ion-icon name="arrow-forward-circle-outline" class="arrow-right"></ion-icon>
+                        </li>
+                    </a>
                 </ul>
             </div>
         </div>
@@ -63,4 +71,5 @@
     <script src="{{ asset('js/autoslide.js') }}"></script>
     <script src="{{ asset('js/switch_text.js') }}"></script>
     <script src="{{ asset('js/preload.js') }}"></script>
+    <script src="{{ asset('js/product_animation.js') }}"></script>
 @endsection

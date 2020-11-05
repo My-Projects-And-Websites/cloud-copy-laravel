@@ -71,4 +71,51 @@ section.cloud-services .cloud-service-links .cloud-service-links-container .clou
   font-weight: bold;
   margin-bottom: 15px;
 }
+
+section.cta {
+  margin: 100px auto;
+  width: 60%;
+  padding: 50px 0px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: #fbfbfb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+section.cta .cta-btn h3 {
+  font-size: 30px;
+  color: #5a7688;
+}
+
+section.cta .cta-btn p {
+  margin: 5px 0px 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+section.cta .cta-btn a {
+  color: #333;
+  border: 1px solid #333;
+  padding: 15px;
+  text-transform: uppercase;
+  display: inline-block;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+section.cta .cta-btn a:hover {
+  background: #333;
+  color: #fff;
+  padding: 15px 25px;
+}
 /*# sourceMappingURL=styles.css.map */

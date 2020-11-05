@@ -29,10 +29,7 @@
                 <div class="page-link">
                     <h3>Contact</h3>
                     <ul class="page-link-list">
-                        <li>Something written</li>
-                        <li>Something written</li>
-                        <li>Something written</li>
-                        <li>Something written</li>
+                        <li>Get in Touch</li>
                     </ul>
                 </div>
             </div>

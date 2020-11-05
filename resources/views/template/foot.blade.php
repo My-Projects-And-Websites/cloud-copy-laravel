@@ -1,8 +1,6 @@
 <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+<script src="{{ asset('js/aos_init.js') }}"></script>
 
 </body>
 </html>

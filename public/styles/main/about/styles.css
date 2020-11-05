@@ -1,6 +1,5 @@
 section {
-  margin: 75px auto 150px;
-  width: 85%;
+  padding: 0px 0px 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,19 +9,19 @@ section {
 }
 
 section.hero {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 section.hero .hero-text {
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  margin-left: 100px;
 }
 
 section.hero .hero-text h1 {
   font-size: 50px;
-  margin-bottom: 10px;
   color: #5a7688;
 }
 
@@ -30,11 +29,31 @@ section.hero .hero-text p {
   color: #333;
   font-size: 18px;
   text-align: justify;
+  margin: 10px 0px 20px;
+}
+
+section.hero .hero-text .cta a {
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 16px;
+  color: #333;
+  border: 1px solid #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+section.hero .hero-text .cta a:hover {
+  background: #97c8c9;
+  color: #fff;
+  border-color: #97c8c9;
+  padding: 15px 30px;
 }
 
 section.hero .hero-img {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
 }
 
 section.hero .hero-img img {
@@ -44,6 +63,7 @@ section.hero .hero-img img {
 }
 
 section.row-about1 {
+  margin: 0 auto;
   width: 70%;
 }
 
@@ -51,25 +71,29 @@ section.row-about1 .row-about1-text h2 {
   font-size: 38px;
   color: #5a7688;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 section.row-about1 .row-about1-text p {
   font-size: 18px;
   color: #333;
+  text-align: justify;
+  text-align-last: center;
 }
 
 section.row-about2 {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 section.row-about2 .row-about2-text {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
+  margin-right: 100px;
 }
 
 section.row-about2 .row-about2-text h2 {
@@ -81,6 +105,7 @@ section.row-about2 .row-about2-text h2 {
 section.row-about2 .row-about2-text p {
   font-size: 18px;
   color: #333;
+  text-align: justify;
 }
 
 section.row-about2 .row-about2-img {

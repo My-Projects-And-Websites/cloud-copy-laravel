@@ -68,3 +68,44 @@ section.cloud-services {
         }
     }
 }
+
+section.cta {
+    margin: 100px auto;
+    width: 60%;
+    padding: 50px 0px;
+    height: fit-content;
+    background: #fbfbfb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .cta-btn {
+
+        h3 {
+            font-size: 30px;
+            color: #5a7688;
+        }
+
+        p {
+            margin: 5px 0px 20px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        a {
+            color: #333;
+            border: 1px solid #333;
+            padding: 15px;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: .4s;
+        }
+
+        a:hover {
+            background: #333;
+            color: #fff;
+            padding: 15px 25px;
+        }
+    }
+}
