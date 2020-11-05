@@ -1,0 +1,83 @@
+main {
+  margin: 100px auto;
+  width: 85%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.9fr 1.1fr;
+      grid-template-columns: 0.9fr 1.1fr;
+  grid-gap: 20px;
+}
+
+main section.contact {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+main section.contact .contact-text h1 {
+  font-size: 50px;
+  color: #97c8c9;
+  margin-bottom: 10px;
+}
+
+main section.contact .contact-text p {
+  color: #333;
+  font-size: 18px;
+}
+
+main section.contact .contact-form {
+  margin: 40px 0px;
+}
+
+main section.contact .contact-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main section.contact .contact-form form input, main section.contact .contact-form form textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border: 1px solid #dcdcdc;
+  outline: 0;
+}
+
+main section.contact .contact-form form textarea {
+  height: 175px;
+  resize: none;
+}
+
+main section.contact .contact-form form input[type="submit"] {
+  background: #97c8c9;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+  text-align: center;
+  width: 25%;
+  border: 1px solid #97c8c9;
+  display: block;
+}
+
+main section.contact .contact-form form input[type="submit"]:hover {
+  background: #5a7688;
+}
+
+main section.contact-img {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+main section.contact-img .contact-img-container img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=styles.css.map */

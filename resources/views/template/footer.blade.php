@@ -5,19 +5,16 @@
                 <div class="page-link">
                     <h3>Services</h3>
                     <ul class="page-link-list">
-                        <li>What We Offer</li>
-                        <li>Something written</li>
-                        <li>Something written</li>
-                        <li>Something written</li>
+                        <li>Packages</li>
+                        <li>Why Choose Us</li>
                     </ul>
                 </div>
                 <div class="page-link">
                     <h3>About</h3>
                     <ul class="page-link-list">
-                        <li>Something written</li>
-                        <li>Something written</li>
-                        <li>Something written</li>
-                        <li>Something written</li>
+                        <li>How We Work</li>
+                        <li>Our Product</li>
+                        <li>Our Service To You</li>
                     </ul>
                 </div>
                 <div class="page-link">

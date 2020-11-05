@@ -1,0 +1,75 @@
+main {
+    margin: 100px auto;
+    width: 85%;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    grid-gap: 20px;
+
+    section.contact {
+        grid-column: 1/2;
+
+        .contact-text {
+
+            h1 {
+                font-size: 50px;
+                color: #97c8c9;
+                margin-bottom: 10px;
+            }
+
+            p {
+                color: #333;
+                font-size: 18px;
+            }
+        }
+
+        .contact-form {
+            margin: 40px 0px;
+
+            form {
+                display: flex;
+                flex-direction: column;
+
+                input, textarea {
+                    width: 100%;
+                    padding: 15px;
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                    border: 1px solid #dcdcdc;
+                    outline: 0;
+                }
+
+                textarea {
+                    height: 175px;
+                    resize: none;
+                }
+
+                input[type="submit"] {
+                    background: #97c8c9;
+                    color: #fff;
+                    cursor: pointer;
+                    transition: .3s;
+                    text-align: center;
+                    width: 25%;
+                    border: 1px solid #97c8c9;
+                    display: block;
+                }
+
+                input[type="submit"]:hover {
+                    background: #5a7688;
+                }
+            }
+        }
+    }
+
+    section.contact-img {
+        grid-column: 2/3;
+
+        .contact-img-container {
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
