@@ -38,27 +38,40 @@ header {
                 justify-content: center;
                 align-items: center;
 
-                a {
-                    display: inline-block;
+                li {
+                    text-transform: uppercase;
                     margin: 0 15px;
+                    position: relative;
 
-                    li {
-                        text-transform: uppercase;
-                        letter-spacing: 1px;
+                    a {
+                        display: inline-block;
                         color: #97c8c9;
                         transition: .3s;
+                        letter-spacing: 1px;
                     }
-                }
 
-                a:last-child {
-                    margin-right: 0;
-                }
+                    a:last-child {
+                        margin-right: 0;
+                    }
 
-                a:hover {
-
-                    li {
+                    a:hover {
                         color: #5a7688;
                     }
+                }
+
+                li::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -7px;
+                    left: 0;
+                    background: #5a7688;
+                    transition: .6s;
+                    width: 0px;
+                    height: 2px;
+                }
+    
+                li:hover::after {
+                    width: 100%;
                 }
             }
         }

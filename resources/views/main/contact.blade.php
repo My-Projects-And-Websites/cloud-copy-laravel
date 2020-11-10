@@ -7,11 +7,8 @@
     <main>
         <section class="contact" data-aos="fade-right" data-aos-duration="1250">
             <div class="contact-text">
-                <h1>Get in Touch</h1>
-                <p>
-                    Connect with us and be part of our network. Don't be shy, we
-                    are truly looking forward to your message.
-                </p>
+                <h1>{{ $longtext[1] }}</h1>
+                <p>{{ $longtext[0] }}</p>
             </div>
             <div class="contact-form">
                 <form action="{{ URL::to('/send') }}" method="POST">
@@ -23,9 +20,9 @@
                 </form>
             </div>
         </section>
-        <section class="contact-img" data-aos="fade-left" data-aos-duration="1250" data-aos-delay="250">
+        <section class="contact-img" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="250">
             <div class="contact-img-container">
-                <img src="{{ asset('images/contact.png') }}" alt="Contact illustration">
+                <img src="{{ asset('images/BIRDCAGE.png') }}" alt="Contact illustration">
             </div>
         </section>
     </main>

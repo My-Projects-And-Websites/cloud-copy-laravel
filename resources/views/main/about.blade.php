@@ -16,18 +16,15 @@
             <img src="{{ asset('images/Maltese Falcon by Carlo Borlenghi.JPG') }}" alt="Boat with falcon on the sail">
         </div>
     </section>
-    <section class="row-about1" data-aos="fade-left" data-aos-duration="1500">
+    <section class="row-about1" data-aos="fade-right" data-aos-duration="1500">
         <div class="row-about1-text">
             <h2>{{ trans($titles[1]) }}</h2>
             <p>{{ trans($contents[1]) }}</p>
+            <div class="cta">
+                <a href="{{ URL::to('/portfolio') }}">View Portfolio</a>
+            </div>
         </div>
-    </section>
-    <section class="row-about2" data-aos="fade-right" data-aos-duration="1500">
-        <div class="row-about2-text">
-            <h2>{{ trans($titles[2]) }}</h2>
-            <p>{{ trans($contents[2]) }}</p>
-        </div>
-        <div class="row-about2-img">
+        <div class="row-about1-img">
             <img src="{{ asset('images/Neninka Office_Winch Media.jpg') }}" alt="Neninka office">
         </div>
     </section>

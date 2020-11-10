@@ -5,10 +5,10 @@
         </div>
         <nav class="header-nav">
             <ul class="header-nav-links">
-                <a href="{{ URL::to('/services') }}"><li>Services</li></a>
-                <a href="{{ URL::to('/about') }}"><li>About</li></a>
-                <a href="{{ URL::to('/portfolio') }}"><li>Portfolio</li></a>
-                <a href="{{ URL::to('/contact') }}"><li>Contact</li></a>
+                <li><a href="{{ URL::to('/services') }}">Services</a></li>
+                <li><a href="{{ URL::to('/about') }}">About</a></li>
+                <li><a href="{{ URL::to('/portfolio') }}">Portfolio</a></li>
+                <li><a href="{{ URL::to('/contact') }}">Contact</a></li>
             </ul>
         </nav>
     </div>

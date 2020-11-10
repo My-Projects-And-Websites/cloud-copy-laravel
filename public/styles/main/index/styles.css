@@ -62,8 +62,6 @@ section.hero .hero-container .hero-img {
 
 section.hero .hero-container .hero-img .hero-img-container {
   width: 100%;
-  height: 100%;
-  overflow: hidden;
 }
 
 section.hero .hero-container .hero-img .hero-img-container .hero-img-slide {
@@ -171,16 +169,27 @@ section.contents .contents-container .contents-category ul.category-list a {
   -webkit-transition: .4s;
   transition: .4s;
   border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 section.contents .contents-container .contents-category ul.category-list a li {
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -193,20 +202,26 @@ section.contents .contents-container .contents-category ul.category-list a li h3
   font-size: 30px;
   text-transform: uppercase;
   color: #fff;
+  opacity: 0;
 }
 
 section.contents .contents-container .contents-category ul.category-list a li ion-icon {
   position: absolute;
   top: 50%;
-  right: 30px;
-  font-size: 50px;
+  left: 50%;
+  font-size: 80px;
   color: #8f8f8f;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
-section.contents .contents-container .contents-category ul.category-list a li:hover {
+section.contents .contents-container .contents-category ul.category-list a:hover li {
+  width: 100%;
   background: #5a7688;
+}
+
+section.contents .contents-container .contents-category ul.category-list a:hover li h3 {
+  display: block;
 }
 
 section.contents .contents-container::after {
@@ -218,49 +233,5 @@ section.contents .contents-container::after {
   height: 100%;
   background: -webkit-gradient(linear, left top, right bottom, from(#97c8c9), to(#5a7688));
   background: linear-gradient(to bottom right, #97c8c9, #5a7688);
-}
-
-section.newsletter {
-  margin: 100px auto;
-  width: 85%;
-}
-
-section.newsletter h2 {
-  font-size: 30px;
-  color: #5a7688;
-  margin-bottom: 15px;
-  letter-spacing: 1px;
-}
-
-section.newsletter h2 span {
-  color: #97c8c9;
-}
-
-section.newsletter form input {
-  font-size: 18px;
-  padding: 15px;
-  border: 1px solid #333;
-  outline: 0;
-}
-
-section.newsletter form input[type="email"] {
-  font-style: italic;
-  width: 30%;
-}
-
-section.newsletter form input[type="submit"] {
-  text-transform: uppercase;
-  background: #fff;
-  width: 10%;
-  margin-left: 5px;
-  cursor: pointer;
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
-section.newsletter form input[type="submit"]:hover {
-  background: #97c8c9;
-  color: #fff;
-  border: 1px solid #97c8c9;
 }
 /*# sourceMappingURL=styles.css.map */

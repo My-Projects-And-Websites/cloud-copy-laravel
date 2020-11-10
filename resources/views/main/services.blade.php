@@ -60,7 +60,7 @@
     <section class="cta" data-aos="fade-up" data-aos-duration="1500">
         <div class="cta-btn">
             <h3>Get in Touch</h3>
-            <p>Want more details? Ready to place your order? Connect with us!</p>
+            <p>Call us, discuss your business requirements.</p>
             <a href="{{ URL::to('/contact') }}">Get In Touch</a>
         </div>
     </section>

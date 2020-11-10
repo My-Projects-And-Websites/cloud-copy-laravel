@@ -56,25 +56,42 @@ header .header-container .header-nav .header-nav-links {
           align-items: center;
 }
 
-header .header-container .header-nav .header-nav-links a {
-  display: inline-block;
+header .header-container .header-nav .header-nav-links li {
+  text-transform: uppercase;
   margin: 0 15px;
+  position: relative;
 }
 
-header .header-container .header-nav .header-nav-links a li {
-  text-transform: uppercase;
-  letter-spacing: 1px;
+header .header-container .header-nav .header-nav-links li a {
+  display: inline-block;
   color: #97c8c9;
   -webkit-transition: .3s;
   transition: .3s;
+  letter-spacing: 1px;
 }
 
-header .header-container .header-nav .header-nav-links a:last-child {
+header .header-container .header-nav .header-nav-links li a:last-child {
   margin-right: 0;
 }
 
-header .header-container .header-nav .header-nav-links a:hover li {
+header .header-container .header-nav .header-nav-links li a:hover {
   color: #5a7688;
+}
+
+header .header-container .header-nav .header-nav-links li::after {
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  background: #5a7688;
+  -webkit-transition: .6s;
+  transition: .6s;
+  width: 0px;
+  height: 2px;
+}
+
+header .header-container .header-nav .header-nav-links li:hover::after {
+  width: 100%;
 }
 
 footer {

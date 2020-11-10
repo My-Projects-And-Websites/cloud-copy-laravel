@@ -52,8 +52,6 @@ section.hero {
 
             .hero-img-container {
                 width: 100%;
-                height: 100%;
-                overflow: hidden;
         
                 .hero-img-slide {
                     margin: 0 auto;
@@ -155,11 +153,16 @@ section.contents {
                     width: 100%;
                     transition: .4s;
                     border-radius: 25px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    text-align: center;
 
                     li {
                         height: 100%;
+                        width: 100%;
                         display: flex;
-                        justify-content: space-between;
+                        justify-content: center;
                         align-items: center;
                         transition: .4s;
 
@@ -168,20 +171,29 @@ section.contents {
                             font-size: 30px;
                             text-transform: uppercase;
                             color: #fff;
+                            opacity: 0;
                         }
 
                         ion-icon {
                             position: absolute;
                             top: 50%;
-                            right: 30px;
-                            font-size: 50px;
+                            left: 50%;
+                            font-size: 80px;
                             color: #8f8f8f;
-                            transform: translateY(-50%);
+                            transform: translate(-50%, -50%);
                         }
                     }
+                }
 
-                    li:hover {
+                a:hover {
+
+                    li {
+                        width: 100%;
                         background: #5a7688;
+
+                        h3 {
+                            display: block;
+                        }
                     }
                 }
             }
@@ -197,52 +209,4 @@ section.contents {
         height: 100%;
         background: linear-gradient(to bottom right, #97c8c9, #5a7688);
     }
-}
-
-
-section.newsletter {
-    margin: 100px auto;
-    width: 85%;
-
-    h2 {
-        font-size: 30px;
-        color: #5a7688;
-        margin-bottom: 15px;
-        letter-spacing: 1px;
-
-        span {
-            color: #97c8c9;
-        }
-    }
-
-    form {
-
-        input {
-            font-size: 18px;
-            padding: 15px;
-            border: 1px solid #333;
-            outline: 0;
-        }
-
-        input[type="email"] {
-            font-style: italic;
-            width: 30%;
-        }
-
-        input[type="submit"] {
-            text-transform: uppercase;
-            background: #fff;
-            width: 10%;
-            margin-left: 5px;
-            cursor: pointer;
-            transition: .3s;
-        }
-
-        input[type="submit"]:hover {
-            background: #97c8c9;
-            color: #fff;
-            border: 1px solid #97c8c9;
-        }
-    }
-
 }

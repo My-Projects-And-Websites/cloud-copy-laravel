@@ -4,11 +4,33 @@ section {
     align-items: center;
 }
 
+.cta {
+
+    a {
+        display: inline-block;
+        padding: 15px 20px;
+        font-size: 16px;
+        color: #333;
+        border: 1px solid #333;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: .4s;
+    }
+
+    a:hover {
+        background: #97c8c9;
+        color: #fff;
+        border-color: #97c8c9;
+        padding: 15px 30px;
+    }
+}
+
 section.hero {
     justify-content: space-between;
+    height: 100%;
 
     .hero-text {
-        flex-basis: 33%;
+        flex-basis: 37%;
         margin-left: 100px;
 
         h1 {
@@ -22,65 +44,24 @@ section.hero {
             text-align: justify;
             margin: 10px 0px 20px;
         }
-
-        .cta {
-
-            a {
-                display: inline-block;
-                padding: 15px 20px;
-                font-size: 16px;
-                color: #333;
-                border: 1px solid #333;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-                transition: .4s;
-            }
-
-            a:hover {
-                background: #97c8c9;
-                color: #fff;
-                border-color: #97c8c9;
-                padding: 15px 30px;
-            }
-        }
     }
 
     .hero-img {
-        flex-basis: 55%;
+        flex-basis: 50%;
+        height: 100%;
 
         img {
             width: 100%;
+            height: 100%;
             object-fit: cover;
         }
     }
 }
 
 section.row-about1 {
-    margin: 0 auto;
-    width: 70%;
-
-    .row-about1-text {
-
-        h2 {
-            font-size: 38px;
-            color: #5a7688;
-            margin-bottom: 10px;
-            text-align: center;
-        }
-
-        p {
-            font-size: 18px;
-            color: #333;
-            text-align: justify;
-            text-align-last: center;
-        }
-    }
-}
-
-section.row-about2 {
     justify-content: space-between;
 
-    .row-about2-text {
+    .row-about1-text {
         flex-basis: 33%;
         order: 2;
         margin-right: 100px;
@@ -88,17 +69,17 @@ section.row-about2 {
         h2 {
             font-size: 38px;
             color: #5a7688;
-            margin-bottom: 10px;
         }
 
         p {
             font-size: 18px;
             color: #333;
             text-align: justify;
+            margin: 10px 0px 20px;
         }
     }
 
-    .row-about2-img {
+    .row-about1-img {
         flex-basis: 55%;
         order: 1;
 

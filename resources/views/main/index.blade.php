@@ -21,9 +21,7 @@
             <div class="hero-img">
                 <div class="hero-img-container">
                     <div class="hero-img-slide">
-                        @foreach($images as $image)
-                        <img src="{{ $image }}" alt="Carousel images">
-                        @endforeach
+                        <img src="{{ asset('images/carousel1.jpg') }}" alt="cloud copy first image carousel">
                     </div>
                 </div>
             </div>
@@ -59,16 +57,8 @@
             </div>
         </div>
     </section>
-    <section class="newsletter">
-        <h2><span>Subscribe</span> to our newsletter.</h2>
-        <form action="{{ URL::to('/sub') }}" method="POST">
-            @csrf
-            <input type="email" name="subEmail" placeholder="Enter email here...">
-            <input type="submit" name="subButton">
-        </form>
-    </section>
 
-    <script src="{{ asset('js/autoslide.js') }}"></script>
+    <script src="{{ asset('js/autoslider.js') }}"></script>
     <script src="{{ asset('js/switch_text.js') }}"></script>
     <script src="{{ asset('js/preload.js') }}"></script>
     <script src="{{ asset('js/product_animation.js') }}"></script>

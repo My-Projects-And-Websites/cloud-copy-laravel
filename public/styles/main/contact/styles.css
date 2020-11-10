@@ -1,10 +1,10 @@
 main {
-  margin: 100px auto;
+  margin: 0 auto;
   width: 85%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 0.9fr 1.1fr;
-      grid-template-columns: 0.9fr 1.1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
 }
 
@@ -12,12 +12,14 @@ main section.contact {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
+  padding: 100px 0px;
 }
 
 main section.contact .contact-text h1 {
   font-size: 50px;
   color: #97c8c9;
   margin-bottom: 10px;
+  width: 85%;
 }
 
 main section.contact .contact-text p {
@@ -72,6 +74,11 @@ main section.contact-img {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  height: 100%;
+  position: relative;
+  top: -50px;
 }
 
 main section.contact-img .contact-img-container img {

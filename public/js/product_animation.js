@@ -1,11 +1,19 @@
 $('#service-cta').on('mouseenter', function() {
     $('.arrow-right').animate({
-        right : "-=150px"
-    }, 250);
+        marginLeft : "+=400px"
+    }, 400, function() {
+        $('.last-h3').animate({
+            opacity : "1"
+        }, 100);
+    });
 });
 
 $('#service-cta').on('mouseleave', function() {
     $('.arrow-right').animate({
-        right : "+=150px"
-    }, 250);
+        marginLeft : "-=400px"
+    }, 400, function() {
+        $('.last-h3').animate({
+            opacity : "0"
+        }, 100);
+    });
 });
