@@ -3,7 +3,7 @@ main {
     width: 85%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 100px;
 
     section.contact {
         grid-column: 1/2;
@@ -13,7 +13,7 @@ main {
 
             h1 {
                 font-size: 50px;
-                color: #97c8c9;
+                color: #A0D4D3;
                 margin-bottom: 10px;
                 width: 85%;
             }
@@ -46,17 +46,18 @@ main {
                 }
 
                 input[type="submit"] {
-                    background: #97c8c9;
-                    color: #fff;
+                    background: none;
+                    color: #1D1E3B;
                     cursor: pointer;
                     transition: .3s;
                     text-align: center;
                     width: 25%;
-                    border: 1px solid #97c8c9;
+                    border: 1px solid #1D1E3B;
                 }
 
                 input[type="submit"]:hover {
-                    background: #5a7688;
+                    background: #1D1E3B;
+                    color: #fff;
                 }
             }
         }

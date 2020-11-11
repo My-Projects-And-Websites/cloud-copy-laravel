@@ -6,8 +6,7 @@ section.intro {
 section.intro .intro-heading {
   font-size: 50px;
   margin-bottom: 5px;
-  color: #97c8c9;
-  text-shadow: 2px 2px 5px #ececec;
+  color: #A0D4D3;
 }
 
 section.intro p {
@@ -23,8 +22,8 @@ section.cloud-services {
 section.cloud-services .cloud-service-links {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(500px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  -ms-grid-columns: (minmax(550px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
   grid-gap: 25px;
 }
 
@@ -43,10 +42,12 @@ section.cloud-services .cloud-service-links .cloud-service-links-container .clou
   border-radius: 30px;
   -webkit-transition: .3s;
   transition: .3s;
+  position: relative;
+  overflow: hidden;
 }
 
 section.cloud-services .cloud-service-links .cloud-service-links-container .cloud-service-link-content h2 {
-  color: #5a7688;
+  color: #1D1E3B;
   text-shadow: 2px 2px 3px #f3f3f3;
   margin-bottom: 8px;
   font-size: 28px;
@@ -63,6 +64,7 @@ section.cloud-services .cloud-service-links .cloud-service-links-container .clou
   color: #b6b6b6;
   font-style: italic;
   font-size: 13px;
+  width: 80%;
 }
 
 section.cloud-services .cloud-service-links .cloud-service-links-container .cloud-service-link-content ul {
@@ -74,8 +76,25 @@ section.cloud-services .cloud-service-links .cloud-service-links-container .clou
 
 section.cloud-services .cloud-service-links .cloud-service-links-container .cloud-service-link-content ul li {
   font-weight: bold;
+  font-size: 16px;
   margin-bottom: 15px;
-  color: #5a7688;
+  color: #1D1E3B;
+  width: 90%;
+}
+
+section.cloud-services .cloud-service-links .cloud-service-links-container .cloud-service-link-content .cloud-package-img {
+  position: absolute;
+  bottom: -25px;
+  right: -20px;
+  width: 25%;
+  opacity: 0.85;
+  z-index: 0;
+}
+
+section.cloud-services .cloud-service-links .cloud-service-links-container .cloud-service-link-content .cloud-package-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 section.cloud-services .cloud-service-links .cloud-service-links-container .cloud-service-link-content:hover {
@@ -105,7 +124,7 @@ section.cta {
 
 section.cta .cta-btn h3 {
   font-size: 30px;
-  color: #5a7688;
+  color: #333;
   font-weight: 100;
 }
 

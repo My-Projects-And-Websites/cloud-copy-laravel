@@ -12,22 +12,25 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 15px 0px;
+        padding: 10px 0px;
 
         .header-logo {
-            width: 4%;
+            width: 7%;
+            padding: 0px;
 
             a {
                 transition: .3s;
+                display: inline-block;
 
                 img {
                     width: 100%;
                     object-fit: cover;
+                    border-radius: 25px;
                 }
             }
             
             a:hover {
-                opacity: 0.75;
+                opacity: 0.9;
             }
         }
 
@@ -40,14 +43,15 @@ header {
 
                 li {
                     text-transform: uppercase;
-                    margin: 0 15px;
+                    margin: 0 20px;
                     position: relative;
 
                     a {
                         display: inline-block;
-                        color: #97c8c9;
+                        color: #A0D4D3;
                         transition: .3s;
                         letter-spacing: 1px;
+                        font-size: 18px;
                     }
 
                     a:last-child {
@@ -55,7 +59,7 @@ header {
                     }
 
                     a:hover {
-                        color: #5a7688;
+                        color: #1D1E3B;
                     }
                 }
 
@@ -64,7 +68,7 @@ header {
                     position: absolute;
                     bottom: -7px;
                     left: 0;
-                    background: #5a7688;
+                    background: #1D1E3B;
                     transition: .6s;
                     width: 0px;
                     height: 2px;
@@ -101,7 +105,7 @@ footer {
     
                     h3 {
                         font-size: 24px;
-                        color: #97c8c9;
+                        color: #A0D4D3;
                     }
     
                     .page-link-list {

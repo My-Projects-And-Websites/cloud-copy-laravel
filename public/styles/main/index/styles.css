@@ -35,12 +35,10 @@ section.hero .hero-container .hero-heading {
 
 section.hero .hero-container .hero-heading h1 {
   font-size: 72px;
-  color: #5a7688;
-  text-shadow: 2px 2px 7px #c0c0c0;
-}
-
-section.hero .hero-container .hero-heading h1 span {
-  color: #97c8c9;
+  background: -webkit-gradient(linear, left top, right top, from(#A0D4D3), to(#1D1E3B));
+  background: linear-gradient(to right, #A0D4D3, #1D1E3B);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 section.hero .hero-container .hero-heading p {
@@ -53,7 +51,7 @@ section.hero .hero-container .hero-heading #quote {
   font-size: 24px;
   font-style: italic;
   font-weight: bolder;
-  color: #5a7688;
+  color: #1D1E3B;
 }
 
 section.hero .hero-container .hero-img {
@@ -108,11 +106,7 @@ section.contents .contents-container [class^="contents"] {
 section.contents .contents-container .contents-heading h2 {
   font-size: 40px;
   letter-spacing: 1px;
-  color: #5a7688;
-}
-
-section.contents .contents-container .contents-heading h2 span {
-  color: #97c8c9;
+  color: #A0D4D3;
 }
 
 section.contents .contents-container .contents-category {
@@ -156,7 +150,7 @@ section.contents .contents-container .contents-category ul.category-list li .cat
 section.contents .contents-container .contents-category ul.category-list li h3 {
   font-size: 22px;
   margin-bottom: 10px;
-  color: #5a7688;
+  color: #1D1E3B;
 }
 
 section.contents .contents-container .contents-category ul.category-list li p {
@@ -195,6 +189,7 @@ section.contents .contents-container .contents-category ul.category-list a li {
           align-items: center;
   -webkit-transition: .4s;
   transition: .4s;
+  position: relative;
 }
 
 section.contents .contents-container .contents-category ul.category-list a li h3 {
@@ -203,6 +198,8 @@ section.contents .contents-container .contents-category ul.category-list a li h3
   text-transform: uppercase;
   color: #fff;
   opacity: 0;
+  position: relative;
+  z-index: 2;
 }
 
 section.contents .contents-container .contents-category ul.category-list a li ion-icon {
@@ -213,15 +210,34 @@ section.contents .contents-container .contents-category ul.category-list a li io
   color: #8f8f8f;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+section.contents .contents-container .contents-category ul.category-list a li::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#A0D4D3), to(#1D1E3B));
+  background: linear-gradient(to right, #A0D4D3, #1D1E3B);
+  -webkit-transition: .5s;
+  transition: .5s;
+  border-radius: 25px;
 }
 
 section.contents .contents-container .contents-category ul.category-list a:hover li {
   width: 100%;
-  background: #5a7688;
 }
 
 section.contents .contents-container .contents-category ul.category-list a:hover li h3 {
   display: block;
+}
+
+section.contents .contents-container .contents-category ul.category-list a:hover li::after {
+  left: 0;
+  z-index: 0;
 }
 
 section.contents .contents-container::after {
@@ -231,7 +247,7 @@ section.contents .contents-container::after {
   right: 0;
   width: 275px;
   height: 100%;
-  background: -webkit-gradient(linear, left top, right bottom, from(#97c8c9), to(#5a7688));
-  background: linear-gradient(to bottom right, #97c8c9, #5a7688);
+  background: -webkit-gradient(linear, left top, right bottom, from(#A0D4D3), to(#1D1E3B));
+  background: linear-gradient(to bottom right, #A0D4D3, #1D1E3B);
 }
 /*# sourceMappingURL=styles.css.map */

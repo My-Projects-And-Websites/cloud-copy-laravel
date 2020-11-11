@@ -4,7 +4,7 @@ $('#service-cta').on('mouseenter', function() {
     }, 400, function() {
         $('.last-h3').animate({
             opacity : "1"
-        }, 100);
+        });
     });
 });
 
@@ -14,6 +14,6 @@ $('#service-cta').on('mouseleave', function() {
     }, 400, function() {
         $('.last-h3').animate({
             opacity : "0"
-        }, 100);
+        });
     });
 });

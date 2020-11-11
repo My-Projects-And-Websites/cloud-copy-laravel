@@ -22,26 +22,29 @@ header .header-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 15px 0px;
+  padding: 10px 0px;
 }
 
 header .header-container .header-logo {
-  width: 4%;
+  width: 7%;
+  padding: 0px;
 }
 
 header .header-container .header-logo a {
   -webkit-transition: .3s;
   transition: .3s;
+  display: inline-block;
 }
 
 header .header-container .header-logo a img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 25px;
 }
 
 header .header-container .header-logo a:hover {
-  opacity: 0.75;
+  opacity: 0.9;
 }
 
 header .header-container .header-nav .header-nav-links {
@@ -58,16 +61,17 @@ header .header-container .header-nav .header-nav-links {
 
 header .header-container .header-nav .header-nav-links li {
   text-transform: uppercase;
-  margin: 0 15px;
+  margin: 0 20px;
   position: relative;
 }
 
 header .header-container .header-nav .header-nav-links li a {
   display: inline-block;
-  color: #97c8c9;
+  color: #A0D4D3;
   -webkit-transition: .3s;
   transition: .3s;
   letter-spacing: 1px;
+  font-size: 18px;
 }
 
 header .header-container .header-nav .header-nav-links li a:last-child {
@@ -75,7 +79,7 @@ header .header-container .header-nav .header-nav-links li a:last-child {
 }
 
 header .header-container .header-nav .header-nav-links li a:hover {
-  color: #5a7688;
+  color: #1D1E3B;
 }
 
 header .header-container .header-nav .header-nav-links li::after {
@@ -83,7 +87,7 @@ header .header-container .header-nav .header-nav-links li::after {
   position: absolute;
   bottom: -7px;
   left: 0;
-  background: #5a7688;
+  background: #1D1E3B;
   -webkit-transition: .6s;
   transition: .6s;
   width: 0px;
@@ -128,7 +132,7 @@ footer .footer-container .footer-row-1 .footer-page-links {
 
 footer .footer-container .footer-row-1 .footer-page-links .page-link h3 {
   font-size: 24px;
-  color: #97c8c9;
+  color: #A0D4D3;
 }
 
 footer .footer-container .footer-row-1 .footer-page-links .page-link .page-link-list {

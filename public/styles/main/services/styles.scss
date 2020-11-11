@@ -5,8 +5,7 @@ section.intro {
     .intro-heading {
         font-size: 50px;
         margin-bottom: 5px;
-        color: #97c8c9;
-        text-shadow: 2px 2px 5px #ececec;
+        color: #A0D4D3;
     }
 
     p {
@@ -21,7 +20,7 @@ section.cloud-services {
 
     .cloud-service-links {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
         grid-gap: 25px;
 
         .cloud-service-links-container {
@@ -36,9 +35,11 @@ section.cloud-services {
                 height: 100%;
                 border-radius: 30px;
                 transition: .3s;
+                position: relative;
+                overflow: hidden;
 
                 h2 {
-                    color: #5a7688;
+                    color: #1D1E3B;
                     text-shadow: 2px 2px 3px #f3f3f3;
                     margin-bottom: 8px;
                     font-size: 28px;
@@ -55,6 +56,7 @@ section.cloud-services {
                     color: #b6b6b6;
                     font-style: italic;
                     font-size: 13px;
+                    width: 80%;
                 }
 
                 ul {
@@ -65,8 +67,24 @@ section.cloud-services {
 
                     li {
                         font-weight: bold;
+                        font-size: 16px;
                         margin-bottom: 15px;
-                        color: #5a7688;
+                        color: #1D1E3B;
+                        width: 90%;
+                    }
+                }
+
+                .cloud-package-img {
+                    position: absolute;
+                    bottom: -25px;
+                    right: -20px;
+                    width: 25%;
+                    opacity: 0.85;
+                    z-index: 0;
+
+                    img {
+                        width: 100%;
+                        object-fit: cover;
                     }
                 }
             }
@@ -93,7 +111,7 @@ section.cta {
 
         h3 {
             font-size: 30px;
-            color: #5a7688;
+            color: #333;
             font-weight: 100;
         }
 

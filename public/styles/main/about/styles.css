@@ -21,9 +21,9 @@ section {
 }
 
 .cta a:hover {
-  background: #97c8c9;
+  background: #1D1E3B;
   color: #fff;
-  border-color: #97c8c9;
+  border-color: #1D1E3B;
   padding: 15px 30px;
 }
 
@@ -42,7 +42,7 @@ section.hero .hero-text {
 
 section.hero .hero-text h1 {
   font-size: 50px;
-  color: #5a7688;
+  color: #A0D4D3;
 }
 
 section.hero .hero-text p {
@@ -81,8 +81,8 @@ section.row-about1 .row-about1-text {
 }
 
 section.row-about1 .row-about1-text h2 {
-  font-size: 38px;
-  color: #5a7688;
+  font-size: 50px;
+  color: #A0D4D3;
 }
 
 section.row-about1 .row-about1-text p {

@@ -8,7 +8,43 @@ use App\Models\Category;
 class PagesController extends Controller
 {
     public function index() {
-        $data['categories'] = Category::all();
+        $data['category_titles'] = [
+            "Website News Blog",
+            "Articles",
+            "Case Studies",
+            "Research Reports",
+            "Webpage Content",
+            "Social Media"
+        ];
+
+        $data['category_desc'] = [
+            "We create content that people genuinely want to read. A website’s news blog is 
+            the equivalent of a vase of flowers in a room. Use content as a magnet to attract 
+            new customers and increase engagement. Amplify your brand voice and accelerate growth 
+            by optimizing every customer interaction.",
+            "People love to talk. Let's start a conversation with eloquence. At Cloud Copy we produce 
+            engaging, newsworthy articles. We come up with interesting ideas by sniffing out topical 
+            issues to ensure that our messaging is ahead of the curve. Ensure that your business has 
+            the coverage it needs to get people talking about your business.",
+            "Celebrate your business's success. We compile concise case studies which highlight your 
+            business expertise and market activity that will set your company apart from its competitors. 
+            Without case studies, your audience will not see a business in action. A case study 
+            demonstrates unique business skills and expertise. The study will highlight real life 
+            challenges a company has faced and how they resolved these issues. Most importantly, case 
+            studies will help your audience to identify that your business services meet their needs.",
+            "Our intelligent research reports analyse the relevant market activity and projections incorporating 
+            expert commentary. This type of report demonstrates thought leadership and elevates a business by 
+            producing intelligent market assets. Research content is most suited to medium to large sized corporate 
+            companies looking to raise the bar.",
+            "Your website is an opportunity to grab the audience and instil them with confidence. Cloud Copy looks 
+            at whether your landing pages accurately communicate your business expertise or products. We believe that 
+            websites copy should be straight forward. Don’t bog readers down with complicated language and intricate 
+            business propositions. The landing pages should clearly showcase a range of services that a business can 
+            offer, while reflecting their branding by adopting a distinctive tone of voice.",
+            "The ‘moth to a flame’. We use social media as an opportunity to connect the dots. We can boost your social 
+            media traffic and increase your digital presence. Sharp, intelligent and concise captions which drive your 
+            audience to the website means that your business is never static. Keep opening up conversation. Let’s get creative."
+        ];
         
         return view('main.index', $data);
     }

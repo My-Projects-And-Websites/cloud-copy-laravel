@@ -22,7 +22,7 @@
         </section>
         <section class="contact-img" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="250">
             <div class="contact-img-container">
-                <img src="{{ asset('images/BIRDCAGE.png') }}" alt="Contact illustration">
+                <img src="{{ asset('images/Final Files/CAGE/PNG/Birdcage Illustration.png') }}" alt="Contact illustration">
             </div>
         </section>
     </main>

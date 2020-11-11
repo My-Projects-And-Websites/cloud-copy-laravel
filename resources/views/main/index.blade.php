@@ -34,14 +34,14 @@
             </div>
             <div class="contents-category">
                 <ul class="category-list">
-                    @if (count($categories) > 0)
-                        @foreach($categories as $category)
-                        <li class="category-list-{{ $category->title }}">
+                    @if (count($category_titles) > 0)
+                        @foreach($category_titles as $key => $category_title)
+                        <li class="category-list-{{ $category_title }}">
                             <div class="category-list-img">
                                 <img src="{{ asset('images/Cloud-04.png') }}" alt="">
                             </div>
-                            <h3>{{ $category->title }}</h3>
-                            <p>{{ $category->description }}</p>
+                            <h3>{{ $category_title }}</h3>
+                            <p>{{ $category_desc[$key++] }}</p>
                         </li>
                         @endforeach
                     @else

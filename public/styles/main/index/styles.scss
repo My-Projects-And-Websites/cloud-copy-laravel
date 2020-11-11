@@ -25,12 +25,9 @@ section.hero {
     
             h1 {
                 font-size: 72px;
-                color: #5a7688;
-                text-shadow: 2px 2px 7px #c0c0c0;
-        
-                span {
-                    color: #97c8c9;
-                }
+                background: linear-gradient(to right, #A0D4D3, #1D1E3B);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
             }
         
             p {
@@ -43,7 +40,7 @@ section.hero {
                 font-size: 24px;
                 font-style: italic;
                 font-weight: bolder;
-                color: #5a7688;
+                color: #1D1E3B;
             }
         }
     
@@ -98,11 +95,7 @@ section.contents {
             h2 {
                 font-size: 40px;
                 letter-spacing: 1px;
-                color: #5a7688;
-    
-                span {
-                    color: #97c8c9;
-                }
+                color: #A0D4D3;
             }
         }
 
@@ -140,7 +133,7 @@ section.contents {
                     h3 {
                         font-size: 22px;
                         margin-bottom: 10px;
-                        color: #5a7688;
+                        color: #1D1E3B;
                     }
                     
                     p {
@@ -165,6 +158,7 @@ section.contents {
                         justify-content: center;
                         align-items: center;
                         transition: .4s;
+                        position: relative;
 
                         h3 {
                             margin-top: 10px;
@@ -172,6 +166,8 @@ section.contents {
                             text-transform: uppercase;
                             color: #fff;
                             opacity: 0;
+                            position: relative;
+                            z-index: 2;
                         }
 
                         ion-icon {
@@ -181,7 +177,20 @@ section.contents {
                             font-size: 80px;
                             color: #8f8f8f;
                             transform: translate(-50%, -50%);
+                            z-index: 3;
                         }
+                    }
+
+                    li::after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: -100%;
+                        width: 100%;
+                        height: 100%;
+                        background: linear-gradient(to right, #A0D4D3, #1D1E3B);
+                        transition: .5s;
+                        border-radius: 25px;
                     }
                 }
 
@@ -189,11 +198,15 @@ section.contents {
 
                     li {
                         width: 100%;
-                        background: #5a7688;
 
                         h3 {
                             display: block;
                         }
+                    }
+
+                    li::after {
+                        left: 0;
+                        z-index: 0;
                     }
                 }
             }
@@ -207,6 +220,6 @@ section.contents {
         right: 0;
         width: 275px;
         height: 100%;
-        background: linear-gradient(to bottom right, #97c8c9, #5a7688);
+        background: linear-gradient(to bottom right, #A0D4D3, #1D1E3B);
     }
 }

@@ -19,6 +19,9 @@
                         <li>{{ trans($include[1]) }}</li>
                         <li>{{ trans($include[2]) }}</li>
                     </ul>
+                    <div class="cloud-package-img">
+                        <img src="{{ asset('images/Final Files/ICONS/Gradient/PNG/Rain Cloud Icon.png') }}" alt="Rain cloud package">
+                    </div>
                 </div>
             </li>
             <li class="cloud-service-links-container">
@@ -28,6 +31,9 @@
                     <ul>
                         <li>{{ trans($include[1]) }}</li>
                     </ul>
+                    <div class="cloud-package-img">
+                        <img src="{{ asset('images/Final Files/ICONS/Gradient/PNG/Snow Cloud Icon.png') }}" alt="Snow cloud package">
+                    </div>
                 </div>
             </li>
             <li class="cloud-service-links-container">
@@ -47,12 +53,18 @@
                         *Illustrations and films are optional add-ons that are 
                         tailored to suit business requirements.
                     </span>
+                    <div class="cloud-package-img">
+                        <img src="{{ asset('images/Final Files/ICONS/Gradient/PNG/Rainbow Cloud Icon.png') }}" alt="Rainbow cloud package">
+                    </div>
                 </div>
             </li>
             <li class="cloud-service-links-container">
                 <div class="cloud-service-link-content">
                     <h2>Blue-Sky Thinking</h2>
                     <p>{{ trans($service2) }}</p>
+                    <div class="cloud-package-img">
+                        <img src="{{ asset('images/Final Files/ICONS/Gradient/PNG/Blue Sky Thinking Icon.png') }}" alt="Blue Sky Thinking package">
+                    </div>
                 </div>
             </li>
         </ul>
