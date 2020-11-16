@@ -1,7 +1,8 @@
 <link rel="stylesheet" href="{{ asset('styles/main/index/styles.css') }}">
-<title>{{ config('app.name', 'Cloud Copy') }} - Home of the best content quality</title>
 
 @extends('template')
+
+@section('title', 'Home')
 
 @section('content')
     <div id="loading"></div>

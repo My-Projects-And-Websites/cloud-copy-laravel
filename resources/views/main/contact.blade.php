@@ -3,6 +3,8 @@
 
 @extends('template')
 
+@section('title', 'Get in Touch')
+
 @section('content')
     <main>
         <section class="contact" data-aos="fade-right" data-aos-duration="1250">

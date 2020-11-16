@@ -1,7 +1,8 @@
 <link rel="stylesheet" href="{{ asset('styles/main/services/styles.css') }}">
-<title>{{ config('app.name', 'Cloud Copy') }} Services</title>
 
 @extends('template')
+
+@section('title', 'Services')
 
 @section('content')
     <section class="intro" data-aos="fade-right" data-aos-duration="1500">
