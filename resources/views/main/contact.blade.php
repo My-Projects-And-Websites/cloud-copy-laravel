@@ -13,10 +13,19 @@
                 <p>{{ $longtext[0] }}</p>
             </div>
             <div class="contact-form">
-                <form action="{{ URL::to('/send') }}" method="POST">
-                    <input type="text" name="queryName" placeholder="Name:">
-                    <input type="email" name="queryEmail" placeholder="Email:">
-                    <textarea name="queryText" placeholder="Message:"></textarea>
+                <form action="{{ URL::to('/send') }}" method="POST" id="contact-form-input">
+                    <div class="text-input">
+                        <small class="text-input-error">Please enter your name.</small>
+                        <input type="text" name="queryName" placeholder="Name:" id="text-input">
+                    </div>
+                    <div class="email-input">
+                        <small class="email-input-error">Please provide a valid email.</small>
+                        <input type="email" name="queryEmail" placeholder="Email:" id="email-input">
+                    </div>
+                    <div class="msg-input">
+                        <small class="msg-input-error">Please write a message.</small>
+                        <textarea name="queryText" placeholder="Message:" id="msg-input"></textarea>
+                    </div>
                     <input type="submit" name="querySubmit" value="Submit">
                     @csrf
                 </form>
@@ -29,5 +38,5 @@
         </section>
     </main>
 
-    <script src="{{ asset('js/form_animation.js') }}"></script>
+    <script src="{{ asset('js/form.js') }}"></script>
 @endsection

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Category;
+use App\Models\Portfolio;
 
 class PagesController extends Controller
 {
@@ -99,8 +99,9 @@ class PagesController extends Controller
     }
 
     public function portfolio() {
+        $data['portfolio'] = Portfolio::all();
         
-        return view('main.portfolio');
+        return view('main.portfolio', $data);
     }
 
     public function contact() {

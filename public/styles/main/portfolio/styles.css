@@ -1,1 +1,82 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+main {
+  margin: 50px auto;
+  width: 85%;
+  height: 3000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+}
+
+main .company-names {
+  -ms-flex-preferred-size: 14%;
+      flex-basis: 14%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 15%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+main .company-names aside {
+  padding: 15px;
+  background: #fafafa;
+}
+
+main .company-names aside .company-names-list a .company-names-list-items {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #1D1E3B;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+main .company-names aside .company-names-list a .company-names-list-items:hover {
+  opacity: 0.75;
+}
+
+main .portfolio-projects {
+  -ms-flex-preferred-size: 83%;
+      flex-basis: 83%;
+}
+
+main .portfolio-projects .portfolio-projects-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 1fr);
+  grid-gap: 25px;
+}
+
+main .portfolio-projects .portfolio-projects-list a {
+  width: 100%;
+  display: inline-block;
+}
+
+main .portfolio-projects .portfolio-projects-list a .portfolio-projects-list-items {
+  padding: 30px;
+  -webkit-box-shadow: 2px 2px 5px #dcdcdc;
+          box-shadow: 2px 2px 5px #dcdcdc;
+}
+
+main .portfolio-projects .portfolio-projects-list a .portfolio-projects-list-items .company-name {
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #A0D4D3;
+}
+
+main .portfolio-projects .portfolio-projects-list a .portfolio-projects-list-items .company-campaign {
+  color: #1D1E3B;
+}
+
+main .portfolio-projects .portfolio-projects-list a .portfolio-projects-list-items .company-brief {
+  color: #1D1E3B;
+}
+/*# sourceMappingURL=styles.css.map */

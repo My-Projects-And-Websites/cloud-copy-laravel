@@ -50,9 +50,21 @@ main section.contact .contact-form form input, main section.contact .contact-for
   outline: 0;
 }
 
-main section.contact .contact-form form textarea {
+main section.contact .contact-form form div[class$="input"] {
+  position: relative;
+}
+
+main section.contact .contact-form form div[class$="input"] textarea {
   height: 175px;
   resize: none;
+}
+
+main section.contact .contact-form form div[class$="input"] small[class$="input-error"] {
+  position: absolute;
+  top: 5px;
+  right: 12px;
+  color: red;
+  display: none;
 }
 
 main section.contact .contact-form form input[type="submit"] {
@@ -64,6 +76,7 @@ main section.contact .contact-form form input[type="submit"] {
   text-align: center;
   width: 25%;
   border: 1px solid #1D1E3B;
+  margin-bottom: 0;
 }
 
 main section.contact .contact-form form input[type="submit"]:hover {

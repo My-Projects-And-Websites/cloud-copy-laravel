@@ -1,0 +1,72 @@
+main {
+    margin: 50px auto;
+    width: 85%;
+    height: 3000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+
+    .company-names {
+        flex-basis: 14%;
+        position: sticky;
+        top: 15%;
+        height: fit-content;
+
+        aside {
+            padding: 15px;
+            background: #fafafa;
+
+            .company-names-list {
+
+                a {
+
+                    .company-names-list-items {
+                        font-size: 20px;
+                        text-transform: uppercase;
+                        color: #1D1E3B;
+                        transition: .3s;
+                    }
+
+                    .company-names-list-items:hover {
+                        opacity: 0.75;
+                    }
+                }
+            }
+        }
+    }
+
+    .portfolio-projects {
+        flex-basis: 83%;
+
+        .portfolio-projects-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 1fr);
+            grid-gap: 25px;
+            
+            a {
+                width: 100%;
+                display: inline-block;
+
+                .portfolio-projects-list-items {
+                    padding: 30px;
+                    box-shadow: 2px 2px 5px #dcdcdc;
+
+                    .company-name {
+                        text-transform: uppercase;
+                        font-size: 40px;
+                        color: #A0D4D3;
+                    }
+
+                    .company-campaign {
+                        color: #1D1E3B;
+                    }
+
+                    .company-brief {
+                        color: #1D1E3B;
+                    }
+                }
+            }
+        }
+    }
+}
