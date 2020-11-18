@@ -8,19 +8,17 @@
     <main>
         <section class="company-names">
             <aside>
-                <ul class="company-names-list">
-                    @foreach($portfolio as $p)
-                    <a href="#{{ $p->name }}">
-                        <li class="company-names-list-items">{{ $p->name }}</li>
-                    </a>
-                    @endforeach
-                </ul>
+                <select class="company-selection">
+                @foreach($company_names as $company_name)
+                    <option value="{{ $company_name->name }}">{{ $company_name->name }}</option>
+                @endforeach
+                </select>
             </aside>
         </section>
         <section class="portfolio-projects">
             <ul class="portfolio-projects-list">
                 @foreach($portfolio as $p)
-                <a href="{{ URL::to($p->link) }}" id="{{ $p->name }}">
+                <a href="{{ URL::to($p->link) }}" class="{{ $p->name }}">
                     <li class="portfolio-projects-list-items">
                         <h2 class="company-name">{{ $p->name }}</h2>
                         <p class="company-campaign">Campaign: {{ $p->campaign }}</p>

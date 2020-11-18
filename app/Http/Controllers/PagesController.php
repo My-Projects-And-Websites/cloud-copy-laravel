@@ -100,7 +100,12 @@ class PagesController extends Controller
 
     public function portfolio() {
         $data['portfolio'] = Portfolio::all();
-        
+
+        $data['company_names'] = Portfolio::select('id', 'name')
+        ->get()
+        ->unique('name')
+        ->all();
+
         return view('main.portfolio', $data);
     }
 

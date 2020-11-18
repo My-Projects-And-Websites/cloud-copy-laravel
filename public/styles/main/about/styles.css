@@ -72,8 +72,8 @@ section.row-about1 {
 }
 
 section.row-about1 .row-about1-text {
-  -ms-flex-preferred-size: 33%;
-      flex-basis: 33%;
+  -ms-flex-preferred-size: 37%;
+      flex-basis: 37%;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
@@ -93,8 +93,8 @@ section.row-about1 .row-about1-text p {
 }
 
 section.row-about1 .row-about1-img {
-  -ms-flex-preferred-size: 55%;
-      flex-basis: 55%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
