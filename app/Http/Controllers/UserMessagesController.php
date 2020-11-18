@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\UserMessage;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\SendCustomerMessage;
 
 class UserMessagesController extends Controller
 {
@@ -39,8 +41,15 @@ class UserMessagesController extends Controller
         $message->name = request('queryName');
         $message->email = request('queryEmail');
         $message->message = request('queryText');
-
         $message->save();
+
+        $data = [
+            'name' => $request->queryName,
+            'message' => $request->queryText,
+            'email' => $request->queryEmail
+        ];
+
+        Mail::to('jimminciong163@gmail.com')->send(new SendCustomerMessage($data));
 
         return redirect('/contact');
     }
@@ -89,4 +98,6 @@ class UserMessagesController extends Controller
     {
         //
     }
+
+
 }

@@ -30,6 +30,12 @@ main .company-names aside {
   background: #fafafa;
 }
 
+main .company-names aside .company-names-list a {
+  display: inline-block;
+  padding-bottom: 20px;
+  position: relative;
+}
+
 main .company-names aside .company-names-list a .company-names-list-items {
   font-size: 20px;
   text-transform: uppercase;
