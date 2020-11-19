@@ -4,6 +4,7 @@ main {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  min-height: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,7 +33,7 @@ main .company-names aside {
   background: #fafafa;
 }
 
-main .company-names aside .company-selection {
+main .company-names aside #company-selection {
   padding: 15px;
   font-size: 16px;
   text-transform: uppercase;
@@ -71,6 +72,8 @@ main .portfolio-projects .portfolio-projects-list a .portfolio-projects-list-ite
           box-shadow: 2px 2px 5px #dcdcdc;
   border-radius: 10px;
   height: 100%;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 main .portfolio-projects .portfolio-projects-list a .portfolio-projects-list-items .company-name {
@@ -86,5 +89,10 @@ main .portfolio-projects .portfolio-projects-list a .portfolio-projects-list-ite
 
 main .portfolio-projects .portfolio-projects-list a .portfolio-projects-list-items .company-brief {
   color: #1D1E3B;
+}
+
+main .portfolio-projects .portfolio-projects-list a .portfolio-projects-list-items:hover {
+  -webkit-transform: scale(1.035);
+          transform: scale(1.035);
 }
 /*# sourceMappingURL=styles.css.map */

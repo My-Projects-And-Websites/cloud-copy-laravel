@@ -31,7 +31,7 @@
     <section class="contents">
         <div class="contents-container">
             <div class="contents-heading">
-                <h2><span>Cloud Copy</span> Products</h2>
+                <h2>Cloud Copy Products</h2>
             </div>
             <div class="contents-category">
                 <ul class="category-list">

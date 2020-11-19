@@ -1,0 +1,82 @@
+.modal-container {
+  height: 80vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-container .modal-form {
+  width: 500px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: #fff;
+  padding: 35px;
+  -webkit-box-shadow: 2px 2px 8px #dcdcdc;
+          box-shadow: 2px 2px 8px #dcdcdc;
+  border-radius: 10px;
+}
+
+.modal-container .modal-form p {
+  font-size: calc(1rem + 4px);
+  color: #333;
+}
+
+.modal-container .modal-form .thanks {
+  border-bottom: 1px solid #dcdcdc;
+  margin-bottom: 25px;
+  padding-bottom: 5px;
+}
+
+.modal-container .modal-form .thanks h2 {
+  font-size: 3rem;
+  color: #A0D4D3;
+}
+
+.modal-container .modal-form .cta {
+  margin: 25px 0px;
+}
+
+.modal-container .modal-form .redirect {
+  font-size: 18px;
+}
+
+.modal-container .modal-form .redirect a {
+  display: block;
+  padding: 15px;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal-container .modal-form .redirect a:first-child {
+  background: #1D1E3B;
+  color: #fff;
+  margin-bottom: 10px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.modal-container .modal-form .redirect a:first-child:hover {
+  opacity: 0.9;
+}
+
+.modal-container .modal-form .redirect a:last-child {
+  border: 1px solid #1D1E3B;
+  color: #1D1E3B;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.modal-container .modal-form .redirect a:last-child:hover {
+  background: #1D1E3B;
+  color: #fff;
+}
+/*# sourceMappingURL=styles.css.map */

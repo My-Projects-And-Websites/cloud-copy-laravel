@@ -12,6 +12,8 @@ class SendCustomerMessage extends Mailable
     use Queueable, SerializesModels;
 
     public $data;
+    public $name;
+    public $email;
 
     /**
      * Create a new message instance.
@@ -20,6 +22,8 @@ class SendCustomerMessage extends Mailable
      */
     public function __construct($data) {
         $this->data = $data;
+        $this->name = $data['name'];
+        $this->email = $data['email'];
     }
 
     /**
@@ -29,7 +33,8 @@ class SendCustomerMessage extends Mailable
      */
     public function build()
     {
-        return $this->from('customer@cloudcopy.services')
+        return $this->from($email = $this->email, $name = $this->name)
+        ->replyTo('no-reply@cloudcopy.services')
         ->subject('Customer Enquiry')
         ->view('email.message')
         ->with('data', $this->data);

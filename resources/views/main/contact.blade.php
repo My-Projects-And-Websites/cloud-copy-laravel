@@ -13,7 +13,7 @@
                 <p>{{ $longtext[0] }}</p>
             </div>
             <div class="contact-form">
-                <form action="{{ URL::to('/send') }}" method="POST" id="contact-form-input">
+                <form action="{{ URL::to('/submit') }}" method="POST" id="contact-form-input">
                     <div class="text-input">
                         <small class="text-input-error">Please enter your name.</small>
                         <input type="text" name="queryName" placeholder="Name:" id="text-input">

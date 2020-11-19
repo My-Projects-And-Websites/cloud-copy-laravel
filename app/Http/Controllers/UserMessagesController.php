@@ -37,21 +37,21 @@ class UserMessagesController extends Controller
      */
     public function store(Request $request)
     {
-        $message = new UserMessage;
-        $message->name = request('queryName');
-        $message->email = request('queryEmail');
-        $message->message = request('queryText');
-        $message->save();
+        $msg = new UserMessage;
+        $msg->name = request('queryName');
+        $msg->email = request('queryEmail');
+        $msg->message = request('queryText');
+        $msg->save();
 
-        $data = [
+        $data = array(
             'name' => $request->queryName,
             'message' => $request->queryText,
             'email' => $request->queryEmail
-        ];
+        );
 
         Mail::to('jimminciong163@gmail.com')->send(new SendCustomerMessage($data));
 
-        return redirect('/contact');
+        return view('onsubmit.successsubmit');
     }
 
     /**

@@ -19,7 +19,7 @@ header {
         padding: 15px 0px;
 
         .header-logo {
-            width: 13%;
+            width: 14%;
             padding: 0px;
 
             a {
@@ -114,8 +114,17 @@ footer {
                     .page-link-list {
                         margin: 1em 0;
     
-                        li {
-                            margin-bottom: 3px;
+                        a {
+                            color: #333;
+                            
+                            li {
+                                margin-bottom: 3px;
+                                transition: .4s;
+                            }
+
+                            li:hover {
+                                opacity: 0.8;
+                            }
                         }
                     }
                 }
@@ -128,7 +137,7 @@ footer {
                 align-items: center;
 
                 ion-icon {
-                    background: #333;
+                    background: linear-gradient(to bottom right, #A0D4D3, #1D1E3B);
                     padding: 20px;
                     border-radius: 50%;
                     color: #fff;
@@ -139,7 +148,7 @@ footer {
                 }
 
                 ion-icon:hover {
-                    background: #181818;
+                    opacity: 0.8;
                 }
             }
         }

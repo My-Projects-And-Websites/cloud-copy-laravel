@@ -30,7 +30,7 @@ header .header-container {
 }
 
 header .header-container .header-logo {
-  width: 13%;
+  width: 14%;
   padding: 0px;
 }
 
@@ -142,8 +142,18 @@ footer .footer-container .footer-row-1 .footer-page-links .page-link .page-link-
   margin: 1em 0;
 }
 
-footer .footer-container .footer-row-1 .footer-page-links .page-link .page-link-list li {
+footer .footer-container .footer-row-1 .footer-page-links .page-link .page-link-list a {
+  color: #333;
+}
+
+footer .footer-container .footer-row-1 .footer-page-links .page-link .page-link-list a li {
   margin-bottom: 3px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+footer .footer-container .footer-row-1 .footer-page-links .page-link .page-link-list a li:hover {
+  opacity: 0.8;
 }
 
 footer .footer-container .footer-row-1 .footer-social-links {
@@ -161,7 +171,8 @@ footer .footer-container .footer-row-1 .footer-social-links {
 }
 
 footer .footer-container .footer-row-1 .footer-social-links ion-icon {
-  background: #333;
+  background: -webkit-gradient(linear, left top, right bottom, from(#A0D4D3), to(#1D1E3B));
+  background: linear-gradient(to bottom right, #A0D4D3, #1D1E3B);
   padding: 20px;
   border-radius: 50%;
   color: #fff;
@@ -173,7 +184,7 @@ footer .footer-container .footer-row-1 .footer-social-links ion-icon {
 }
 
 footer .footer-container .footer-row-1 .footer-social-links ion-icon:hover {
-  background: #181818;
+  opacity: 0.8;
 }
 
 footer .footer-container .footer-row-2 {

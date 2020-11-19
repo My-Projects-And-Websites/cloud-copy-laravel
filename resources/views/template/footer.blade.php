@@ -5,31 +5,28 @@
                 <div class="page-link">
                     <h3>Services</h3>
                     <ul class="page-link-list">
-                        <li>Packages</li>
-                        <li>Why Choose Us</li>
+                        <a href="{{ URL::to('/services') }}"><li>Packages</li></a>
+                        <a href="{{ URL::to('/services') }}"><li>Why Choose Us</li></a>
                     </ul>
                 </div>
                 <div class="page-link">
                     <h3>About</h3>
                     <ul class="page-link-list">
-                        <li>How We Work</li>
-                        <li>Our Product</li>
-                        <li>Our Service To You</li>
+                        <a href="{{ URL::to('/about') }}"><li>Our Product</li></a>
+                        <a href="{{ URL::to('/about') }}"><li>How We Work</li></a>
+                        <a href="{{ URL::to('/about') }}"><li>Our Service To You</li></a>
                     </ul>
                 </div>
                 <div class="page-link">
                     <h3>Portfolio</h3>
                     <ul class="page-link-list">
-                        <li>Something written</li>
-                        <li>Something written</li>
-                        <li>Something written</li>
-                        <li>Something written</li>
+                        <a href="{{ URL::to('/portfolio') }}"><li>View Projects</li></a>
                     </ul>
                 </div>
                 <div class="page-link">
                     <h3>Contact</h3>
                     <ul class="page-link-list">
-                        <li>Get in Touch</li>
+                        <a href="{{ URL::to('/contact') }}"><li>Get in Touch</li></a>
                     </ul>
                 </div>
             </div>
@@ -48,7 +45,6 @@
                 <div class="footer-leg">
                     <a href="#">Terms and Conditions</a>
                     <a href="#">Privacy Promise</a>
-                    <a href="#">Manage Cookies</a>
                 </div>
             </div>
         </div>

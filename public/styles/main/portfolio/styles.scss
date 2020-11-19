@@ -2,6 +2,7 @@ main {
     margin: 50px auto;
     width: 85%;
     height: fit-content;
+    min-height: 700px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -17,7 +18,7 @@ main {
             padding: 15px;
             background: #fafafa;
 
-            .company-selection {
+            #company-selection {
                 padding: 15px;
                 font-size: 16px;
                 text-transform: uppercase;
@@ -49,6 +50,7 @@ main {
                     box-shadow: 2px 2px 5px #dcdcdc;
                     border-radius: 10px;
                     height: 100%;
+                    transition: .3s;
 
                     .company-name {
                         text-transform: uppercase;
@@ -64,6 +66,10 @@ main {
                     .company-brief {
                         color: #1D1E3B;
                     }
+                }
+
+                .portfolio-projects-list-items:hover {
+                    transform: scale(1.035);
                 }
             }
         }
