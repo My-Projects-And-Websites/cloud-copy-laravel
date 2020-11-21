@@ -1,9 +1,32 @@
-main {
-  margin: 50px auto;
+#main-portfolio-content {
+  background-image: url("../../../images/helipad.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#main-portfolio-content .portfolio-title {
+  padding-top: 75px;
+  margin: 0px auto 25px;
+  width: 85%;
+  position: relative;
+}
+
+#main-portfolio-content .portfolio-title .portfolio-title-text h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 44px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#main-portfolio-content main {
+  margin: 0px auto 50px;
   width: 85%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  min-height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,9 +37,10 @@ main {
       -ms-flex-align: start;
           align-items: flex-start;
   position: relative;
+  padding-bottom: 50px;
 }
 
-main .company-names {
+#main-portfolio-content main .company-names {
   -ms-flex-preferred-size: 15%;
       flex-basis: 15%;
   height: -webkit-fit-content;
@@ -24,12 +48,12 @@ main .company-names {
   height: fit-content;
 }
 
-main .company-names aside {
+#main-portfolio-content main .company-names aside {
   padding: 15px;
   background: #fafafa;
 }
 
-main .company-names aside #company-selection {
+#main-portfolio-content main .company-names aside #company-selection {
   padding: 15px;
   font-size: 16px;
   text-transform: uppercase;
@@ -43,51 +67,73 @@ main .company-names aside #company-selection {
   cursor: pointer;
 }
 
-main .portfolio-projects {
+#main-portfolio-content main .portfolio-projects {
   -ms-flex-preferred-size: 83%;
       flex-basis: 83%;
 }
 
-main .portfolio-projects .portfolio-projects-list {
+#main-portfolio-content main .portfolio-projects .portfolio-projects-list {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(500px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  grid-gap: 25px;
+  grid-gap: 20px;
 }
 
-main .portfolio-projects .portfolio-projects-list a {
+#main-portfolio-content main .portfolio-projects .portfolio-projects-list .option-item {
   width: 100%;
   height: 100%;
   display: inline-block;
 }
 
-main .portfolio-projects .portfolio-projects-list a .portfolio-projects-list-items {
+#main-portfolio-content main .portfolio-projects .portfolio-projects-list .option-item .portfolio-projects-list-items {
   padding: 30px;
-  -webkit-box-shadow: 2px 2px 5px #dcdcdc;
-          box-shadow: 2px 2px 5px #dcdcdc;
   border-radius: 10px;
   height: 100%;
   -webkit-transition: .3s;
   transition: .3s;
+  background: #fff;
 }
 
-main .portfolio-projects .portfolio-projects-list a .portfolio-projects-list-items .company-name {
+#main-portfolio-content main .portfolio-projects .portfolio-projects-list .option-item .portfolio-projects-list-items .company-name {
   text-transform: uppercase;
   font-size: 40px;
   color: #A0D4D3;
 }
 
-main .portfolio-projects .portfolio-projects-list a .portfolio-projects-list-items .company-campaign {
+#main-portfolio-content main .portfolio-projects .portfolio-projects-list .option-item .portfolio-projects-list-items .company-campaign {
   color: #1D1E3B;
   margin: 10px 0px 5px;
 }
 
-main .portfolio-projects .portfolio-projects-list a .portfolio-projects-list-items .company-brief {
+#main-portfolio-content main .portfolio-projects .portfolio-projects-list .option-item .portfolio-projects-list-items .company-brief {
   color: #1D1E3B;
 }
 
-main .portfolio-projects .portfolio-projects-list a .portfolio-projects-list-items:hover {
+#main-portfolio-content main .portfolio-projects .portfolio-projects-list .option-item .portfolio-projects-list-items .company-project-cta {
+  margin: 15px 0px 0px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#main-portfolio-content main .portfolio-projects .portfolio-projects-list .option-item .portfolio-projects-list-items .company-project-cta a {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 18px;
+  border: 1px solid #1D1E3B;
+  color: #1D1E3B;
+  padding: 15px 25px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+#main-portfolio-content main .portfolio-projects .portfolio-projects-list .option-item .portfolio-projects-list-items .company-project-cta a:hover {
+  background: #1D1E3B;
+  color: #fff;
+}
+
+#main-portfolio-content main .portfolio-projects .portfolio-projects-list .option-item .portfolio-projects-list-items:hover {
   -webkit-transform: scale(1.035);
           transform: scale(1.035);
 }

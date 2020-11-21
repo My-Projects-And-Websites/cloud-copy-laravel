@@ -5,31 +5,41 @@
 @section('title', 'Our Works')
 
 @section('content')
-    <main>
-        <section class="company-names" data-aos="zoom-in" data-aos-duration="1500">
-            <aside>
-                <select id="company-selection">
-                <option value="All">All</option>
-                @foreach($company_names as $company_name)
-                    <option value="{{ $company_name->concat }}">{{ $company_name->name }}</option>
-                @endforeach
-                </select>
-            </aside>
-        </section>
-        <section class="portfolio-projects" data-aos="fade-up" data-aos-duration="1500">
-            <ul class="portfolio-projects-list">
-                @foreach($portfolio as $p)
-                <a href="{{ URL::to($p->link) }}" class="{{ $p->concat }} option-item">
-                    <li class="portfolio-projects-list-items">
-                        <h2 class="company-name">{{ $p->name }}</h2>
-                        <p class="company-campaign">Campaign: {{ $p->campaign }}</p>
-                        <p class="company-brief">Brief: {{ $p->brief }}</p>
-                    </li>
-                </a>
-                @endforeach
-            </ul>
-        </section>
-    </main>
+    <section id="main-portfolio-content">
+        <div class="portfolio-title">
+            <div class="portfolio-title-text">
+                <h2>Cloud Copy's Portfolio of Work</h2>
+            </div>
+        </div>
+        <main>
+            <section class="company-names" data-aos="zoom-in" data-aos-duration="1000">
+                <aside>
+                    <select id="company-selection">
+                        <option value="All">All</option>
+                    @foreach($company_names as $company_name)
+                        <option value="{{ $company_name->concat }}">{{ $company_name->name }}</option>
+                    @endforeach
+                    </select>
+                </aside>
+            </section>
+            <section class="portfolio-projects" data-aos="fade-up" data-aos-duration="1500">
+                <ul class="portfolio-projects-list">
+                    @foreach($portfolio as $p)
+                    <div class="{{ $p->concat }} option-item">
+                        <li class="portfolio-projects-list-items">
+                            <h2 class="company-name">{{ $p->name }}</h2>
+                            <p class="company-campaign">Campaign: {{ $p->campaign }}</p>
+                            <p class="company-brief">Brief: {{ $p->brief }}</p>
+                            <div class="company-project-cta">
+                                <a href="{{ URL::to($p->link) }}">View</a>
+                            </div>
+                        </li>
+                    </div>
+                    @endforeach
+                </ul>
+            </section>
+        </main>
+    </section>
     <section class="testimonials">
         <h2>Testimonials</h2>
         @foreach($testimonials['name'] as $key => $testimonial)

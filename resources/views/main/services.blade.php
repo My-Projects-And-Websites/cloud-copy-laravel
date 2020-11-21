@@ -46,14 +46,6 @@
                         <li>{{ trans($include[3]) }}</li>
                         <li>{{ trans($include[4]) }}</li>
                     </ul>
-                    <span>
-                        *The illustrations and film services are standalone 
-                        packages which are outsourced with Cloud Copy’s trusted 
-                        friends and charged at daily rates.
-                        <br><br>
-                        *Illustrations and films are optional add-ons that are 
-                        tailored to suit business requirements.
-                    </span>
                     <div class="cloud-package-img">
                         <img src="{{ asset('images/Final Files/ICONS/Gradient/PNG/Rainbow Cloud Icon.png') }}" alt="Rainbow cloud package">
                     </div>
@@ -73,7 +65,7 @@
     <section class="cta" data-aos="fade-up" data-aos-duration="1500">
         <div class="cta-btn">
             <h3>Get in Touch</h3>
-            <p>Call us, discuss your business requirements.</p>
+            <p>Get in touch. Contact us to discuss your business requirements.</p>
             <a href="{{ URL::to('/contact') }}">Get In Touch</a>
         </div>
     </section>

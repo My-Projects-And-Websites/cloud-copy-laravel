@@ -57,16 +57,6 @@ section.cloud-services .cloud-service-links .cloud-service-links-container .clou
   color: #333;
 }
 
-section.cloud-services .cloud-service-links .cloud-service-links-container .cloud-service-link-content span {
-  display: inline-block;
-  margin: 15px 0px 0px;
-  line-height: 1.5;
-  color: #b6b6b6;
-  font-style: italic;
-  font-size: 13px;
-  width: 80%;
-}
-
 section.cloud-services .cloud-service-links .cloud-service-links-container .cloud-service-link-content ul {
   list-style-type: square;
   margin-top: 1.5em;

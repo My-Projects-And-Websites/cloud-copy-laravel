@@ -41,9 +41,10 @@ class PagesController extends Controller
             websites copy should be straight forward. Don’t bog readers down with complicated language and intricate 
             business propositions. The landing pages should clearly showcase a range of services that a business can 
             offer, while reflecting their branding by adopting a distinctive tone of voice.",
-            "The ‘moth to a flame’. We use social media as an opportunity to connect the dots. We can boost your social 
-            media traffic and increase your digital presence. Sharp, intelligent and concise captions which drive your 
-            audience to the website means that your business is never static. Keep opening up conversation. Let’s get creative."
+            "We use social media as an opportunity to connect the dots. We can help to boost your social media traffic 
+            and increase your digital presence by curating sharp, concise, and imaginative captions that can drive your 
+            audience to the website. Because life is never static, your business communication shouldn’t be either. 
+            Keep opening new threads of conversation."
         ];
         
         return view('main.index', $data);
@@ -93,7 +94,7 @@ class PagesController extends Controller
 
         By comparing quarterly information to the previous year's information for the same quarter, investors receive rich insights into a business's performance, growth, product developments and expertise. 
         ";
-        $data['service4'] = "This creative cloud of content provides clients with social media posts, illustrations, filmography, and content creation for weekly blogs. The rainbow cloud is precisely as you imagine, visually impactful, reactive, fun, and innovative. This content package helps businesses to stand out. Some clients have described it as ‘moth to a flame.’ Let’s get creative.";
+        $data['service4'] = "This creative cloud of content provides clients with social media posts, illustrations, and weekly blogs. The rainbow cloud is visually impactful, fun, and innovative. Sharp, intelligent and concise content can drive traffic to a business website like a ‘moth to a flame’. The rainbow package helps businesses to stand out against the competition. Let’s get creative.";
         
         return view('main.services', $data);
     }
@@ -107,7 +108,7 @@ class PagesController extends Controller
 
                 "role" => ['Head of Content'], 
 
-                "desc" => ["Emma understood and developed the brief perfectly. The content was forward-thinking and aspirational- which is core to our business values."
+                "desc" => ["\"Emma understood and developed the brief perfectly. The content was forward-thinking and aspirational- which is core to our business values.\""
                           ],
 
                 "company" => ['YachtWorld'],

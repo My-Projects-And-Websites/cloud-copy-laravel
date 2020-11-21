@@ -159,9 +159,7 @@ section.contents .contents-container .contents-category ul.category-list li p {
 
 section.contents .contents-container .contents-category ul.category-list a {
   height: 100%;
-  width: 100%;
-  -webkit-transition: .4s;
-  transition: .4s;
+  width: calc((100% * 2) + 20px);
   border-radius: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -212,8 +210,8 @@ section.contents .contents-container .contents-category ul.category-list a li::a
   height: 100%;
   background: -webkit-gradient(linear, left top, right top, from(#A0D4D3), to(#1D1E3B));
   background: linear-gradient(to right, #A0D4D3, #1D1E3B);
-  -webkit-transition: .45s;
-  transition: .45s;
+  -webkit-transition: 1s;
+  transition: 1s;
   border-radius: 25px;
 }
 
@@ -239,5 +237,25 @@ section.contents .contents-container::after {
   height: 100%;
   background: -webkit-gradient(linear, left top, right bottom, from(#A0D4D3), to(#1D1E3B));
   background: linear-gradient(to bottom right, #A0D4D3, #1D1E3B);
+}
+
+@media (max-width: 480px) {
+  section.hero .hero-container .hero-heading {
+    left: 0;
+    padding: 20px 15px;
+  }
+  section.hero .hero-container .hero-heading h1 {
+    font-size: 40px;
+  }
+  section.hero .hero-container .hero-heading p {
+    font-size: 16px;
+    margin: 10px 0px;
+  }
+  section.hero .hero-container .hero-heading #quote {
+    font-size: 16px;
+  }
+  section.hero .hero-container .hero-img .hero-img-container .hero-img-slide {
+    height: 45vh;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

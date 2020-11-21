@@ -42,7 +42,7 @@ main section.contact .contact-form form {
 }
 
 main section.contact .contact-form form input, main section.contact .contact-form form textarea {
-  width: 100%;
+  width: 95%;
   padding: 15px;
   font-size: 16px;
   margin-bottom: 10px;
@@ -62,7 +62,7 @@ main section.contact .contact-form form div[class$="input"] textarea {
 main section.contact .contact-form form div[class$="input"] small[class$="input-error"] {
   position: absolute;
   top: 5px;
-  right: 12px;
+  right: 50px;
   color: red;
   display: none;
 }

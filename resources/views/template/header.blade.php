@@ -11,5 +11,8 @@
                 <li><a href="{{ URL::to('/contact') }}">Contact</a></li>
             </ul>
         </nav>
+        <div class="hbg-btn">
+            <span id="hbg">&#9776;</span>
+        </div>
     </div>
 </header>

@@ -21,3 +21,8 @@ Route::get('/contact', 'App\Http\Controllers\PagesController@contact');
 Route::get('/portfolio', 'App\Http\Controllers\PagesController@portfolio');
 
 Route::post('/submit', 'App\Http\Controllers\UserMessagesController@store');
+
+Route::get('/linkedin', 'App\Http\Controllers\SocialLinksController@linkedin');
+Route::get('/twitter', 'App\Http\Controllers\SocialLinksController@twitter');
+Route::get('/facebook', 'App\Http\Controllers\SocialLinksController@facebook');
+Route::get('/instagram', 'App\Http\Controllers\SocialLinksController@instagram');
