@@ -4,7 +4,6 @@ main {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  min-height: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,9 +19,6 @@ main {
 main .company-names {
   -ms-flex-preferred-size: 15%;
       flex-basis: 15%;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 15%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -94,5 +90,35 @@ main .portfolio-projects .portfolio-projects-list a .portfolio-projects-list-ite
 main .portfolio-projects .portfolio-projects-list a .portfolio-projects-list-items:hover {
   -webkit-transform: scale(1.035);
           transform: scale(1.035);
+}
+
+.testimonials {
+  margin: 150px auto;
+  width: 70%;
+}
+
+.testimonials h2 {
+  color: #1D1E3B;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+.testimonials .test-container {
+  padding: 50px;
+  -webkit-box-shadow: 1px 1px 5px #dcdcdc;
+          box-shadow: 1px 1px 5px #dcdcdc;
+  border-radius: 10px;
+}
+
+.testimonials .test-container h3 {
+  color: #A0D4D3;
+  font-size: 24px;
+}
+
+.testimonials .test-container p {
+  font-size: 20px;
+  margin: 20px 0px 40px;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -21,6 +21,7 @@
                     <h3>Portfolio</h3>
                     <ul class="page-link-list">
                         <a href="{{ URL::to('/portfolio') }}"><li>View Projects</li></a>
+                        <a href="{{ URL::to('/portfolio') }}"><li>Testimonials</li></a>
                     </ul>
                 </div>
                 <div class="page-link">

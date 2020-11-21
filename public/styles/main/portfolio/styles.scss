@@ -2,7 +2,6 @@ main {
     margin: 50px auto;
     width: 85%;
     height: fit-content;
-    min-height: 700px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -10,8 +9,6 @@ main {
 
     .company-names {
         flex-basis: 15%;
-        position: sticky;
-        top: 15%;
         height: fit-content;
 
         aside {
@@ -72,6 +69,35 @@ main {
                     transform: scale(1.035);
                 }
             }
+        }
+    }
+}
+
+.testimonials {
+    margin: 150px auto;
+    width: 70%;
+
+    h2 {
+        color: #1D1E3B;
+        font-size: 36px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        margin-left: 15px;
+    }
+
+    .test-container {
+        padding: 50px;
+        box-shadow: 1px 1px 5px #dcdcdc;
+        border-radius: 10px;
+
+        h3 {
+            color: #A0D4D3;
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 20px;
+            margin: 20px 0px 40px;
         }
     }
 }

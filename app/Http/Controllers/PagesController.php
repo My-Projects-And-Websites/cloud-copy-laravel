@@ -100,8 +100,20 @@ class PagesController extends Controller
 
     public function portfolio() {
         $data['portfolio'] = Portfolio::all();
-
         $data['company_names'] = Portfolio::select('name', 'concat')->distinct()->get();
+
+        $data['testimonials'] = [
+                "name" => ["Ryan McVinney"], 
+
+                "role" => ['Head of Content'], 
+
+                "desc" => ["Emma understood and developed the brief perfectly. The content was forward-thinking and aspirational- which is core to our business values."
+                          ],
+
+                "company" => ['YachtWorld'],
+
+                "img" => ['images/yachtworld-logo-b.png']
+        ];
 
         return view('main.portfolio', $data);
     }

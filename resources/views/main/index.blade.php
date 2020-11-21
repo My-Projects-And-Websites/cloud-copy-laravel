@@ -51,7 +51,6 @@
                     <a href="{{ URL::to('/services') }}" id="service-cta">
                         <li class="last-list-item">
                             <h3 class="last-h3">View Services</h3>
-                            <ion-icon name="arrow-forward-circle-outline" class="arrow-right"></ion-icon>
                         </li>
                     </a>
                 </ul>
@@ -62,5 +61,4 @@
     <script src="{{ asset('js/autoslider.js') }}"></script>
     <script src="{{ asset('js/switch_text.js') }}"></script>
     <script src="{{ asset('js/preload.js') }}"></script>
-    <script src="{{ asset('js/product_animation.js') }}"></script>
 @endsection

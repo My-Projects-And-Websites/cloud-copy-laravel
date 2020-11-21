@@ -196,21 +196,11 @@ section.contents .contents-container .contents-category ul.category-list a .last
   margin-top: 10px;
   font-size: 30px;
   text-transform: uppercase;
-  color: #fff;
-  opacity: 0;
+  color: #1D1E3B;
   position: relative;
   z-index: 2;
-}
-
-section.contents .contents-container .contents-category ul.category-list a .last-list-item ion-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 80px;
-  color: #8f8f8f;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: 3;
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 
 section.contents .contents-container .contents-category ul.category-list a li::after {
@@ -231,8 +221,8 @@ section.contents .contents-container .contents-category ul.category-list a:hover
   width: 100%;
 }
 
-section.contents .contents-container .contents-category ul.category-list a:hover li h3 {
-  display: block;
+section.contents .contents-container .contents-category ul.category-list a:hover li .last-h3 {
+  color: #fff;
 }
 
 section.contents .contents-container .contents-category ul.category-list a:hover li::after {
