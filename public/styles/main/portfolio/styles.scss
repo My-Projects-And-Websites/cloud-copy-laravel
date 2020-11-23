@@ -49,6 +49,7 @@
                     outline: 0;
                     text-overflow: ellipsis;
                     cursor: pointer;
+                    background: #fdfdfd;
                 }
             }
         }
@@ -118,7 +119,6 @@
     }
 }
 
-
 .testimonials {
     margin: 150px auto;
     width: 70%;
@@ -141,9 +141,101 @@
             font-size: 24px;
         }
 
-        p {
+        .testimonials-description {
             font-size: 20px;
             margin: 20px 0px 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #main-portfolio-content {
+    
+        .portfolio-title {
+        
+            .portfolio-title-text {
+        
+                h2 {
+                    font-size: 30px;
+                }
+            }
+        }
+        
+        main {
+            width: 85%;
+            flex-direction: column;
+            min-height: auto;
+        
+            .company-names {
+                flex-basis: 50%;
+                height: fit-content;
+        
+                aside.company-sel {
+                    padding: 10px;
+                    background: #fefefe;
+        
+                    #company-selection {
+                        font-size: 14px;
+                    }
+                }
+            }
+        
+            .portfolio-projects {
+                flex-basis: 50%;
+                margin-top: 20px;
+        
+                .portfolio-projects-list {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: auto;
+                    
+                    .option-item {
+        
+                        .portfolio-projects-list-items {
+                            padding: 20px;
+        
+                            .company-name {
+                                font-size: 26px;
+                            }
+
+                            .company-campaign, .company-brief {
+                                font-size: 14px;
+                            }
+    
+                            .company-project-cta {
+    
+                                a {
+                                    font-size: 14px;
+                                    padding: 10px 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .testimonials {
+        margin: 75px auto;
+        width: 85%;
+    
+        h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+            margin-left: 0;
+        }
+    
+        .test-container {
+            padding: 25px;
+    
+            h3 {
+                font-size: 20px;
+            }
+    
+            .testimonials-description {
+                font-size: 16px;
+            }
         }
     }
 }

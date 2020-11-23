@@ -65,6 +65,7 @@
   outline: 0;
   text-overflow: ellipsis;
   cursor: pointer;
+  background: #fdfdfd;
 }
 
 #main-portfolio-content main .portfolio-projects {
@@ -163,8 +164,80 @@
   font-size: 24px;
 }
 
-.testimonials .test-container p {
+.testimonials .test-container .testimonials-description {
   font-size: 20px;
   margin: 20px 0px 40px;
+}
+
+@media screen and (max-width: 480px) {
+  #main-portfolio-content .portfolio-title .portfolio-title-text h2 {
+    font-size: 30px;
+  }
+  #main-portfolio-content main {
+    width: 85%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: auto;
+  }
+  #main-portfolio-content main .company-names {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #main-portfolio-content main .company-names aside.company-sel {
+    padding: 10px;
+    background: #fefefe;
+  }
+  #main-portfolio-content main .company-names aside.company-sel #company-selection {
+    font-size: 14px;
+  }
+  #main-portfolio-content main .portfolio-projects {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin-top: 20px;
+  }
+  #main-portfolio-content main .portfolio-projects .portfolio-projects-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+  #main-portfolio-content main .portfolio-projects .portfolio-projects-list .option-item .portfolio-projects-list-items {
+    padding: 20px;
+  }
+  #main-portfolio-content main .portfolio-projects .portfolio-projects-list .option-item .portfolio-projects-list-items .company-name {
+    font-size: 26px;
+  }
+  #main-portfolio-content main .portfolio-projects .portfolio-projects-list .option-item .portfolio-projects-list-items .company-campaign, #main-portfolio-content main .portfolio-projects .portfolio-projects-list .option-item .portfolio-projects-list-items .company-brief {
+    font-size: 14px;
+  }
+  #main-portfolio-content main .portfolio-projects .portfolio-projects-list .option-item .portfolio-projects-list-items .company-project-cta a {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  .testimonials {
+    margin: 75px auto;
+    width: 85%;
+  }
+  .testimonials h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+  .testimonials .test-container {
+    padding: 25px;
+  }
+  .testimonials .test-container h3 {
+    font-size: 20px;
+  }
+  .testimonials .test-container .testimonials-description {
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -89,3 +89,63 @@ section.row-about1 {
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+    section {
+        flex-direction: column;
+    }
+
+    .cta {
+
+        a {
+            font-size: 14px;
+        }
+    
+        a:hover {
+            padding: 15px 20px;
+        }
+    }
+
+    section.hero {
+        justify-content: space-between;
+        height: 100%;
+        margin-top: 50px;
+    
+        .hero-text {
+            flex-basis: 50%;
+            margin-left: 0;
+            padding: 25px;
+    
+            h1 {
+                font-size: 30px;
+            }
+    
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    section.row-about1 {
+    
+        .row-about1-text {
+            flex-basis: 50%;
+            order: 1;
+            margin-right: 0;
+            padding: 25px;
+    
+            h2 {
+                font-size: 30px;
+            }
+    
+            p {
+                font-size: 14px;
+                text-align: left;
+            }
+        }
+    
+        .row-about1-img {
+            order: 2;
+        }
+    }
+}

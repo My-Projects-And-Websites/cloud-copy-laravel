@@ -139,4 +139,71 @@ section.cta .cta-btn a:hover {
   color: #fff;
   padding: 15px 30px;
 }
+
+@media screen and (max-width: 480px) {
+  section.intro {
+    margin-bottom: 25px;
+  }
+  section.intro .intro-heading {
+    font-size: 30px;
+  }
+  section.intro p {
+    font-size: 16px;
+  }
+  section.cloud-services {
+    margin: 0 auto 25px;
+    width: 85%;
+  }
+  section.cloud-services .cloud-service-links {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-gap: 10px;
+  }
+  section.cloud-services .cloud-service-links .cloud-service-links-container .cloud-service-link-content {
+    margin-left: 0px;
+    padding: 25px;
+  }
+  section.cloud-services .cloud-service-links .cloud-service-links-container .cloud-service-link-content h2 {
+    margin-bottom: 7px;
+    font-size: 24px;
+  }
+  section.cloud-services .cloud-service-links .cloud-service-links-container .cloud-service-link-content p {
+    color: #333;
+    font-size: 14px;
+  }
+  section.cloud-services .cloud-service-links .cloud-service-links-container .cloud-service-link-content ul {
+    width: 100%;
+    padding-left: 20px;
+  }
+  section.cloud-services .cloud-service-links .cloud-service-links-container .cloud-service-link-content ul li {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  section.cloud-services .cloud-service-links .cloud-service-links-container .cloud-service-link-content ul li:last-child {
+    width: 70%;
+  }
+  section.cloud-services .cloud-service-links .cloud-service-links-container .cloud-service-link-content .cloud-package-img {
+    bottom: 15px;
+    right: 15px;
+  }
+  section.cloud-services .cloud-service-links .cloud-service-links-container .cloud-service-link-content:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  section.cta {
+    width: 80%;
+    padding: 50px 25px;
+  }
+  section.cta .cta-btn h3 {
+    font-size: 26px;
+  }
+  section.cta .cta-btn p {
+    font-size: 16px;
+  }
+  section.cta .cta-btn a {
+    padding: 10px 15px;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

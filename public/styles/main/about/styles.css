@@ -105,4 +105,59 @@ section.row-about1 .row-about1-img img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+@media screen and (max-width: 480px) {
+  section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cta a {
+    font-size: 14px;
+  }
+  .cta a:hover {
+    padding: 15px 20px;
+  }
+  section.hero {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 100%;
+    margin-top: 50px;
+  }
+  section.hero .hero-text {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin-left: 0;
+    padding: 25px;
+  }
+  section.hero .hero-text h1 {
+    font-size: 30px;
+  }
+  section.hero .hero-text p {
+    font-size: 14px;
+  }
+  section.row-about1 .row-about1-text {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-right: 0;
+    padding: 25px;
+  }
+  section.row-about1 .row-about1-text h2 {
+    font-size: 30px;
+  }
+  section.row-about1 .row-about1-text p {
+    font-size: 14px;
+    text-align: left;
+  }
+  section.row-about1 .row-about1-img {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

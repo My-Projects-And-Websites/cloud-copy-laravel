@@ -92,3 +92,69 @@ main {
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 10px;
+    
+        section.contact {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            padding: 25px 0px;
+    
+            .contact-text {
+    
+                h1 {
+                    font-size: 30px;
+                }
+    
+                p {
+                    font-size: 14px;
+                }
+            }
+    
+            .contact-form {
+                margin: 20px 0px;
+    
+                form {
+                    
+                    input, textarea {
+                        width: 100%;
+                        padding: 12px;
+                        font-size: 14px;
+                    }
+    
+                    div[class$="input"] {
+    
+                        textarea {
+                            height: 125px;
+                        }
+        
+                        small[class$="input-error"] {
+                            top: 5px;
+                            right: 5px;
+                            font-size: 12px;
+                        }
+                    }
+                    
+                    input[type="submit"] {
+                        width: 45%;
+                    }
+    
+                    input[type="submit"]:hover {
+                        background: none;
+                        color: #1D1E3B;
+                    }
+                }
+            }
+        }
+    
+        section.contact-img {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            top: 0px;
+        }
+    }    
+}

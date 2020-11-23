@@ -127,3 +127,89 @@ section.cta {
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+    section.intro {
+        margin-bottom: 25px;
+    
+        .intro-heading {
+            font-size: 30px;
+        }
+    
+        p {
+            font-size: 16px;
+        }
+    }
+
+    section.cloud-services {
+        margin: 0 auto 25px;
+        width: 85%;
+    
+        .cloud-service-links {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-gap: 10px;
+    
+            .cloud-service-links-container {
+
+                .cloud-service-link-content {
+                    margin-left: 0px;
+                    padding: 25px;
+    
+                    h2 {
+                        margin-bottom: 7px;
+                        font-size: 24px;
+                    }
+    
+                    p {
+                        color: #333;
+                        font-size: 14px;
+                    }
+    
+                    ul {
+                        width: 100%;
+                        padding-left: 20px;
+    
+                        li {
+                            font-size: 14px;
+                            line-height: 1.5;
+                        }
+
+                        li:last-child {
+                            width: 70%;
+                        }
+                    }
+    
+                    .cloud-package-img {
+                        bottom: 15px;
+                        right: 15px;
+                    }
+                }
+    
+                .cloud-service-link-content:hover {
+                    transform: none;
+                }
+            }
+        }
+    }
+
+    section.cta {
+        width: 80%;
+        padding: 50px 25px;
+
+        .cta-btn {
+    
+            h3 {
+                font-size: 26px;
+            }
+    
+            p {
+                font-size: 16px;
+            }
+    
+            a {
+                padding: 10px 15px;
+            }
+        }
+    }
+}

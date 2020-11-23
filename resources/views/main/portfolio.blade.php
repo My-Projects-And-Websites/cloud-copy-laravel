@@ -13,7 +13,7 @@
         </div>
         <main>
             <section class="company-names" data-aos="zoom-in" data-aos-duration="1000">
-                <aside>
+                <aside class="company-sel">
                     <select id="company-selection">
                         <option value="All">All</option>
                     @foreach($company_names as $company_name)
@@ -46,7 +46,7 @@
         <div class="test-container">
             <h3>{{ $testimonial }}</h3>
             <small>{{ $testimonials['role'][$key] }} at {{ $testimonials['company'][$key] }}</small>
-            <p>{{ $testimonials['desc'][$key] }}</p>
+            <p class="testimonials-description">{{ $testimonials['desc'][$key] }}</p>
             <div class="test-img">
                 <img src="{{ asset($testimonials['img'][$key]) }}" alt="company logo">
             </div>

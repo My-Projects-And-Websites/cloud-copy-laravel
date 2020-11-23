@@ -37,7 +37,7 @@
                 <ul class="category-list">
                     @if (count($category_titles) > 0)
                         @foreach($category_titles as $key => $category_title)
-                        <li class="category-list-{{ $category_title }}" data-aos="fade-up" data-aos-duration="1000">
+                        <li class="category-list-{{ $category_title }} category-item" data-aos="fade-up" data-aos-duration="1000">
                             <div class="category-list-img">
                                 <img src="{{ asset('images/Cloud-04.png') }}" alt="">
                             </div>
@@ -48,8 +48,8 @@
                     @else
                         <p>Nothing to display.</p>
                     @endif
-                    <a href="{{ URL::to('/services') }}" id="service-cta">
-                        <li class="last-list-item" data-aos="fade-up" data-aos-duration="1000">
+                    <a href="{{ URL::to('/services') }}" id="service-cta" data-aos="fade-up" data-aos-duration="1000">
+                        <li class="last-list-item">
                             <h3 class="last-h3">View Services</h3>
                         </li>
                     </a>
