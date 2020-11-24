@@ -12,6 +12,7 @@
             </div>
         </div>
         <main>
+            @if(count($company_names) > 0)
             <section class="company-names" data-aos="zoom-in" data-aos-duration="1000">
                 <aside class="company-sel">
                     <select id="company-selection">
@@ -38,6 +39,9 @@
                     @endforeach
                 </ul>
             </section>
+            @else
+            <p>Nothing to display.</p>
+            @endif
         </main>
     </section>
     <section class="testimonials">
