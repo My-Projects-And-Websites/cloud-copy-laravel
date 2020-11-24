@@ -172,6 +172,7 @@ section.cta .cta-btn a:hover {
   section.cloud-services .cloud-service-links .cloud-service-links-container .cloud-service-link-content p {
     color: #333;
     font-size: 14px;
+    line-height: 1.75;
   }
   section.cloud-services .cloud-service-links .cloud-service-links-container .cloud-service-link-content ul {
     width: 100%;
@@ -179,7 +180,7 @@ section.cta .cta-btn a:hover {
   }
   section.cloud-services .cloud-service-links .cloud-service-links-container .cloud-service-link-content ul li {
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 1.75;
   }
   section.cloud-services .cloud-service-links .cloud-service-links-container .cloud-service-link-content ul li:last-child {
     width: 70%;

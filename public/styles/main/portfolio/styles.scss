@@ -38,6 +38,7 @@
             aside {
                 padding: 15px;
                 background: #fafafa;
+                position: relative;
     
                 #company-selection {
                     padding: 15px;
@@ -51,6 +52,19 @@
                     cursor: pointer;
                     background: #fdfdfd;
                 }
+
+            }
+
+            aside::after {
+                content: '>';
+                font-family: "Consolas", monospace;
+                font-size: 30px;
+                color: #1D1E3B;
+                transform: rotate(90deg) translateX(-110%);
+                right: 15%;
+                top: 50%;
+                position: absolute;
+                pointer-events: none;
             }
         }
     
@@ -167,16 +181,23 @@
             min-height: auto;
         
             .company-names {
-                flex-basis: 50%;
+                flex-basis: 100%;
+                width: 100%;
                 height: fit-content;
         
                 aside.company-sel {
                     padding: 10px;
                     background: #fefefe;
+                    border-radius: 10px;
         
                     #company-selection {
                         font-size: 14px;
+                        border-radius: inherit;
                     }
+                }
+
+                aside::after {
+                    right: 10%;
                 }
             }
         

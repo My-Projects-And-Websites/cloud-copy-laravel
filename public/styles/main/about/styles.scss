@@ -1,5 +1,4 @@
 section {
-    padding: 0px 0px 150px;
     display: flex;
     align-items: center;
 }
@@ -28,6 +27,7 @@ section {
 section.hero {
     justify-content: space-between;
     height: 100%;
+    margin-bottom: 150px;
 
     .hero-text {
         flex-basis: 37%;
@@ -110,6 +110,7 @@ section.row-about1 {
         justify-content: space-between;
         height: 100%;
         margin-top: 50px;
+        margin-bottom: 100px;
     
         .hero-text {
             flex-basis: 50%;
@@ -123,6 +124,10 @@ section.row-about1 {
             p {
                 font-size: 14px;
             }
+        }
+
+        .hero-img {
+            flex-basis: 100%;
         }
     }
 

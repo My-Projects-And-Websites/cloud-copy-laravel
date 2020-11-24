@@ -51,6 +51,7 @@
 #main-portfolio-content main .company-names aside {
   padding: 15px;
   background: #fafafa;
+  position: relative;
 }
 
 #main-portfolio-content main .company-names aside #company-selection {
@@ -66,6 +67,19 @@
   text-overflow: ellipsis;
   cursor: pointer;
   background: #fdfdfd;
+}
+
+#main-portfolio-content main .company-names aside::after {
+  content: '>';
+  font-family: "Consolas", monospace;
+  font-size: 30px;
+  color: #1D1E3B;
+  -webkit-transform: rotate(90deg) translateX(-110%);
+          transform: rotate(90deg) translateX(-110%);
+  right: 15%;
+  top: 50%;
+  position: absolute;
+  pointer-events: none;
 }
 
 #main-portfolio-content main .portfolio-projects {
@@ -182,8 +196,9 @@
     min-height: auto;
   }
   #main-portfolio-content main .company-names {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -191,9 +206,14 @@
   #main-portfolio-content main .company-names aside.company-sel {
     padding: 10px;
     background: #fefefe;
+    border-radius: 10px;
   }
   #main-portfolio-content main .company-names aside.company-sel #company-selection {
     font-size: 14px;
+    border-radius: inherit;
+  }
+  #main-portfolio-content main .company-names aside::after {
+    right: 10%;
   }
   #main-portfolio-content main .portfolio-projects {
     -ms-flex-preferred-size: 50%;

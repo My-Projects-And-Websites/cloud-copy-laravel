@@ -16,9 +16,9 @@
                 <aside class="company-sel">
                     <select id="company-selection">
                         <option value="All">All</option>
-                    @foreach($company_names as $company_name)
+                        @foreach($company_names as $company_name)
                         <option value="{{ $company_name->concat }}">{{ $company_name->name }}</option>
-                    @endforeach
+                        @endforeach
                     </select>
                 </aside>
             </section>
