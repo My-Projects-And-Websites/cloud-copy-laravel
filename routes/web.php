@@ -26,3 +26,10 @@ Route::get('/linkedin', 'App\Http\Controllers\SocialLinksController@linkedin');
 Route::get('/twitter', 'App\Http\Controllers\SocialLinksController@twitter');
 Route::get('/facebook', 'App\Http\Controllers\SocialLinksController@facebook');
 Route::get('/instagram', 'App\Http\Controllers\SocialLinksController@instagram');
+
+Route::get('/clearcache', function() {
+    $exitCode = Artisan::call('config:clear');
+    $exitCode = Artisan::call('cache:clear');
+    $exitCode = Artisan::call('config:cache');
+    return 'Cache cleared!';
+});
