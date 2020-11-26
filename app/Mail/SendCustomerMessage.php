@@ -33,7 +33,8 @@ class SendCustomerMessage extends Mailable
      */
     public function build()
     {
-        return $this->from($email = $this->email, $name = $this->name)
+        // return $this->from($email = $this->email, $name = $this->name)
+        return $this->from('no-reply@cloudcopy.services')
         ->replyTo('no-reply@cloudcopy.services')
         ->subject('Customer Enquiry')
         ->view('email.message')

@@ -49,7 +49,7 @@ class UserMessagesController extends Controller
             'email' => $request->queryEmail
         );
 
-        Mail::to('jimminciong163@gmail.com')->send(new SendCustomerMessage($data));
+        Mail::to('emma@cloudcopy.services')->send(new SendCustomerMessage($data));
 
         return view('onsubmit.successsubmit');
     }
