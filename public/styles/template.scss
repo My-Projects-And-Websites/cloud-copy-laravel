@@ -218,20 +218,28 @@ footer {
                 margin: 5px 0px 15px;
             }
 
-            #footer-cta {
-                display: block;
-                padding: 10px 15px;
-                border: 1px solid black;
-                width: fit-content;
-                text-transform: uppercase;
-                color: #1D1E3B;
-                transition: .4s;
-            }
+            .footer-cta-links {
+                display: flex;
 
-            #footer-cta:hover {
-                background: #A0D4D3;
-                color: #fff;
-                border: 1px solid #A0D4D3;
+                .footer-cta {
+                    padding: 10px 15px;
+                    border: 1px solid black;
+                    width: fit-content;
+                    text-transform: uppercase;
+                    color: #1D1E3B;
+                    transition: .4s;
+                }
+    
+                .footer-cta:first-child:hover {
+                    background: #A0D4D3;
+                    color: #fff;
+                    border: 1px solid #A0D4D3;
+                }
+
+                .footer-cta:last-child {
+                    margin-left: 10px;
+                    border: none;
+                }
             }
         }
 
@@ -317,10 +325,6 @@ footer {
 
                 .footer-nav-links {
                     grid-row-gap: 10px;
-
-                    a {
-
-                    }
                 }
             }
 
@@ -337,9 +341,21 @@ footer {
                     font-size: 16px;
                 }
 
-                a#footer-cta {
-                    font-size: 16px;
+                .footer-cta-links {
+                    flex-direction: column;
+
+                    a.footer-cta {
+                        order: 2;
+                        font-size: 16px;
+                    }
+
+                    span.footer-cta:last-child {
+                        order: 1;
+                        margin-left: 0;
+                        margin-bottom: 10px;
+                    }
                 }
+
             }
 
             .footer-sec-4 {

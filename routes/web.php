@@ -14,6 +14,12 @@ use App\Mail\SendCustomerMessage;
 |
 */
 
+/*
+    Author: Jimm Inciong
+    Created At: 10/11/2020
+    Modified Last At: 26/11/2020
+*/
+
 Route::get('/', 'App\Http\Controllers\PagesController@index');
 Route::get('/about', 'App\Http\Controllers\PagesController@about');
 Route::get('/services', 'App\Http\Controllers\PagesController@services');

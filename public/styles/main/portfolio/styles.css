@@ -183,6 +183,16 @@
   margin: 20px 0px 40px;
 }
 
+.testimonials .test-container .test-img {
+  width: 30%;
+}
+
+.testimonials .test-container .test-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media screen and (max-width: 480px) {
   #main-portfolio-content .portfolio-title .portfolio-title-text h2 {
     font-size: 30px;
@@ -258,6 +268,9 @@
   }
   .testimonials .test-container .testimonials-description {
     font-size: 16px;
+  }
+  .testimonials .test-container .test-img {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

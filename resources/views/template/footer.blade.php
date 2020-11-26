@@ -23,7 +23,10 @@
         <div class="footer-sec-3 footer-row-1">
             <h3>Get in Touch</h3>
             <p>Get in touch. Contact us to discuss your business requirements.</p>
-            <a href="{{ URL::to('/contact') }}" id="footer-cta">Get in Touch</a>
+            <div class="footer-cta-links">
+                <a href="{{ URL::to('/contact') }}" class="footer-cta">Get in Touch</a>
+                <span class="footer-cta">+447517773093</span>
+            </div>
         </div>
         <div class="footer-sec-4 footer-row-2">
             <p id="copyright">Copyright &copy; Cloud Copy. All Rights Reserved.</p>

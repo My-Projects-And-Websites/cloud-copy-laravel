@@ -1,5 +1,11 @@
 <?php
 
+/*
+    Author: Jimm Inciong
+    Created At: 10/11/2020
+    Modified Last At: 26/11/2020
+*/
+
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
