@@ -1,0 +1,76 @@
+.tc-container {
+  background-color: #A0D4D3;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 50px 0px;
+}
+
+.tc-container .tc-content {
+  margin: 0 auto;
+  width: 70%;
+  background: #fff;
+  padding: 30px 50px;
+  border-radius: 10px;
+  color: #333;
+}
+
+.tc-container .tc-content p, .tc-container .tc-content span, .tc-container .tc-content li {
+  line-height: 1.75;
+  font-size: 18px;
+}
+
+.tc-container .tc-content h2 {
+  font-size: 36px;
+}
+
+.tc-container .tc-content .intro {
+  margin: 20px 0px;
+}
+
+.tc-container .tc-content span {
+  display: block;
+  margin-top: 20px;
+}
+
+.tc-container .tc-content ul {
+  margin: 1em 0;
+  padding-left: 40px;
+  list-style-type: square;
+}
+
+.tc-container .tc-content ul li {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .tc-container .tc-content {
+    margin: 0 auto;
+    width: 90%;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  .tc-container .tc-content p, .tc-container .tc-content span, .tc-container .tc-content li {
+    font-size: 16px;
+  }
+  .tc-container .tc-content h2 {
+    font-size: 28px;
+  }
+  .tc-container .tc-content .intro {
+    margin: 20px 0px;
+  }
+  .tc-container .tc-content span {
+    margin-top: 20px;
+  }
+  .tc-container .tc-content ul {
+    margin: 20px 0;
+    padding-left: 20px;
+    list-style-type: square;
+  }
+  .tc-container .tc-content ul li {
+    margin-bottom: 10px;
+  }
+}
+/*# sourceMappingURL=termsconditions.css.map */

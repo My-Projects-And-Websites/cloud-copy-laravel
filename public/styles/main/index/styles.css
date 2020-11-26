@@ -230,10 +230,11 @@ section.contents .contents-container::after {
 @media screen and (max-width: 480px) {
   section.hero .hero-container .hero-heading {
     left: 0;
-    padding: 20px 15px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 15px;
   }
   section.hero .hero-container .hero-heading h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
   section.hero .hero-container .hero-heading p {
     font-size: 16px;
@@ -274,6 +275,9 @@ section.contents .contents-container::after {
     padding: 20px 25px;
     text-align: left;
   }
+  section.contents .contents-container .contents-category ul.category-list .category-item .category-list-img {
+    display: none;
+  }
   section.contents .contents-container .contents-category ul.category-list .category-item h3 {
     font-size: 20px;
   }
@@ -286,12 +290,6 @@ section.contents .contents-container::after {
   }
   section.contents .contents-container .contents-category ul.category-list a .last-list-item .last-h3 {
     font-size: 20px;
-  }
-  section.contents .contents-container .contents-category ul.category-list a .last-list-item::after {
-    display: none;
-  }
-  section.contents .contents-container .contents-category ul.category-list a:hover .last-list-item .last-h3 {
-    color: #1D1E3B;
   }
   section.contents .contents-container::after {
     display: none;

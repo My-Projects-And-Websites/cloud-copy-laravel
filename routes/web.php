@@ -27,6 +27,9 @@ Route::get('/twitter', 'App\Http\Controllers\SocialLinksController@twitter');
 Route::get('/facebook', 'App\Http\Controllers\SocialLinksController@facebook');
 Route::get('/instagram', 'App\Http\Controllers\SocialLinksController@instagram');
 
+Route::get('/tc', 'App\Http\Controllers\PrivaciesController@tc');
+Route::get('/pp', 'App\Http\Controllers\PrivaciesController@pp');
+
 Route::get('/clearcache', function() {
     $exitCode = Artisan::call('config:clear');
     $exitCode = Artisan::call('cache:clear');

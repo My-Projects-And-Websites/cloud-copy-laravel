@@ -29,8 +29,8 @@
             <p id="copyright">Copyright &copy; Cloud Copy. All Rights Reserved.</p>
         </div>
         <div class="footer-sec-5 footer-row-2">
-            <a href="#">Terms and Conditions</a>
-            <a href="#">Privacy Promise</a>
+            <a href="{{ URL::to('/tc') }}">Terms and Conditions</a>
+            <a href="{{ URL::to('/pp') }}">Privacy Promise</a>
         </div>
     </div>
 </footer>

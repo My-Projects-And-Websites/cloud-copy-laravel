@@ -68,10 +68,10 @@ section.cloud-services .cloud-service-links .cloud-service-links-container .clou
 }
 
 section.cloud-services .cloud-service-links .cloud-service-links-container .cloud-service-link-content ul li {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 16px;
   margin-bottom: 15px;
-  color: #1D1E3B;
+  color: #333;
   width: 90%;
 }
 

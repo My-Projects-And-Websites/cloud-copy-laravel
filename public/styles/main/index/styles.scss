@@ -217,10 +217,11 @@ section.contents {
 
             .hero-heading {
                 left: 0;
-                padding: 20px 15px;
+                background: rgba(255, 255, 255, 0.7);
+                padding: 15px;
 
                 h1 {
-                    font-size: 40px;
+                    font-size: 30px;
                 }
 
                 p {
@@ -276,6 +277,10 @@ section.contents {
                         padding: 20px 25px;
                         text-align: left;
 
+                        .category-list-img {
+                            display: none;
+                        }
+
                         h3 {
                             font-size: 20px;
                         }
@@ -295,21 +300,6 @@ section.contents {
                                 font-size: 20px;
                             }
                         }
-
-                        .last-list-item::after {
-                            display: none;
-                        }
-                    }
-
-                    a:hover {
-
-                        .last-list-item {
-
-                            .last-h3 {
-                                color: #1D1E3B;
-                            }
-                        }
-
                     }
                 }
             }

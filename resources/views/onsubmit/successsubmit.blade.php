@@ -9,9 +9,9 @@
         <div class="modal-form">
             <div class="thanks">
                 <h2>Thank you!</h2>
-                <p>Your response has been submitted.</p>
+                <p>Your message has been successfully received.</p>
             </div>
-            <p class="cta">We'll get back to you as soon as we can. For the meantime, please have a look at our projects!</p>
+            <p class="cta">Somebody will get back to within the next 24 hours.</p>
             <div class="redirect">
                 <a href="{{ URL::to('/portfolio') }}">View Portfolio</a>
                 <a href="{{ URL::to('/') }}">Home</a>

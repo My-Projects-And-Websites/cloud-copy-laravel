@@ -1,0 +1,53 @@
+.pp-container {
+    background-color: #A0D4D3;
+    width: 100%;
+    height: fit-content;
+    padding: 50px 0px;
+
+    .pp-content {
+        margin: 0 auto;
+        width: 70%;
+        background: #fff;
+        padding: 30px 50px;
+        border-radius: 10px;
+        color: #333;    
+
+        h2 {
+            font-size: 36px;
+        }
+
+        p {
+            line-height: 1.75;
+            font-size: 18px;
+        }
+
+        .pp-main-par {
+            margin: 20px 0px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .pp-container {
+    
+        .pp-content {
+            margin: 0 auto;
+            width: 90%;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+    
+            h2 {
+                font-size: 28px;
+            }
+            
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+// #A0D4D3
+// #1D1E3B
