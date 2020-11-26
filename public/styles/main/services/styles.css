@@ -38,6 +38,7 @@ section.cloud-services .cloud-service-links .cloud-service-links-container .clou
   -webkit-box-shadow: 2px 5px 8px #ccc;
           box-shadow: 2px 5px 8px #ccc;
   padding: 35px;
+  padding-bottom: 80px;
   height: 100%;
   border-radius: 30px;
   -webkit-transition: .3s;
@@ -55,6 +56,8 @@ section.cloud-services .cloud-service-links .cloud-service-links-container .clou
 
 section.cloud-services .cloud-service-links .cloud-service-links-container .cloud-service-link-content p {
   color: #333;
+  width: 90%;
+  text-align: justify;
 }
 
 section.cloud-services .cloud-service-links .cloud-service-links-container .cloud-service-link-content ul {
@@ -76,7 +79,7 @@ section.cloud-services .cloud-service-links .cloud-service-links-container .clou
   position: absolute;
   bottom: -25px;
   right: -20px;
-  width: 25%;
+  width: 20%;
   opacity: 0.85;
   z-index: -1;
 }

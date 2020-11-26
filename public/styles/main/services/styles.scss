@@ -32,6 +32,7 @@ section.cloud-services {
                 margin: 15px 0px 0px 15px;
                 box-shadow: 2px 5px 8px #ccc;
                 padding: 35px;
+                padding-bottom: 80px;
                 height: 100%;
                 border-radius: 30px;
                 transition: .3s;
@@ -47,6 +48,8 @@ section.cloud-services {
 
                 p {
                     color: #333;
+                    width: 90%;
+                    text-align: justify;
                 }
 
                 ul {
@@ -68,7 +71,7 @@ section.cloud-services {
                     position: absolute;
                     bottom: -25px;
                     right: -20px;
-                    width: 25%;
+                    width: 20%;
                     opacity: 0.85;
                     z-index: -1;
 

@@ -1,5 +1,4 @@
 <link rel="stylesheet" href="{{ asset('styles/main/contact/styles.css') }}">
-<title>{{ config('app.name', 'Cloud Copy') }} - Get in Touch</title>
 
 @extends('template')
 
