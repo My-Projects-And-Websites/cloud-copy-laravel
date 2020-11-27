@@ -290,6 +290,10 @@ section.contents .contents-container::after {
   }
   section.contents .contents-container .contents-category ul.category-list a .last-list-item .last-h3 {
     font-size: 20px;
+    color: #fff;
+  }
+  section.contents .contents-container .contents-category ul.category-list a .last-list-item::after {
+    left: 0;
   }
   section.contents .contents-container::after {
     display: none;

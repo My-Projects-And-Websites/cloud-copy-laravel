@@ -298,7 +298,12 @@ section.contents {
 
                             .last-h3 {
                                 font-size: 20px;
+                                color: #fff;
                             }
+                        }
+
+                        .last-list-item::after {
+                            left: 0;
                         }
                     }
                 }

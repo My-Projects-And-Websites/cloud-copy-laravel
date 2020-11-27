@@ -56,7 +56,7 @@ section.cloud-services .cloud-service-links .cloud-service-links-container .clou
 
 section.cloud-services .cloud-service-links .cloud-service-links-container .cloud-service-link-content p {
   color: #333;
-  width: 90%;
+  width: 100%;
   text-align: justify;
 }
 
@@ -208,6 +208,12 @@ section.cta .cta-btn a:hover {
   }
   section.cta .cta-btn a {
     padding: 10px 15px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1400px) {
+  section.cloud-services .cloud-service-links .cloud-service-links-container .cloud-service-link-content p {
+    width: 80%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
