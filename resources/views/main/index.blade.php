@@ -12,10 +12,7 @@
             <div class="hero-text">
                 <div class="hero-heading">
                     <h1><span>Cloud Copy.</span> See you at nine.</h1>
-                    <p>
-                        Cloud Copy creates content to strengthen businesses' brand 
-                        proposition.
-                    </p>
+                    <p>Cloud Copy creates content to strengthen your brand proposition</p>
                     <span id="quote">Start your conversation with eloquence</span>
                 </div>
             </div>
