@@ -83,7 +83,7 @@ class PagesController extends Controller
         $data['include'] = [
             'Four website blog articles per month (800-1000 words per blog)',
             'Four quarterly reports (approx 2500-3000 words per report)',
-            'Social media images and captions, eight times per month',
+            'Social media images and captions, twenty posts per month',
             'Website blog content four times per month (800-1000 words per blog)',
             'Website content makeover (includes six core site pages)'
         ];
