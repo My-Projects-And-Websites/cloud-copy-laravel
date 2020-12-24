@@ -21,6 +21,9 @@
                         <option value="{{ $company_name->concat }}">{{ $company_name->name }}</option>
                         @endforeach
                     </select>
+                    <div class="arrow-down">
+                        <ion-icon class="arrow-point" name="caret-down-outline"></ion-icon>
+                    </div>
                 </aside>
             </section>
             <section class="portfolio-projects" data-aos="fade-up" data-aos-duration="1500">

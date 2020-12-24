@@ -35,13 +35,13 @@
             flex-basis: 15%;
             height: fit-content;
     
-            aside {
+            aside.company-sel {
                 padding: 15px;
                 background: #fafafa;
                 position: relative;
     
                 #company-selection {
-                    padding: 15px;
+                    padding: 15px 30px 15px 15px;
                     font-size: 16px;
                     text-transform: uppercase;
                     width: 100%;
@@ -53,18 +53,19 @@
                     background: #fdfdfd;
                 }
 
-            }
+                .arrow-down {
+                    position: absolute;
+                    right: 15px;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    transition: .4s;
+                    font-size: 24px;
+                    pointer-events: none;
 
-            aside::after {
-                content: '>';
-                font-family: "Consolas", monospace;
-                font-size: 30px;
-                color: #1D1E3B;
-                transform: rotate(90deg) translateX(-110%);
-                right: 15%;
-                top: 50%;
-                position: absolute;
-                pointer-events: none;
+                    ionicon {
+                        color: #333;
+                    }
+                }
             }
         }
     
@@ -202,6 +203,7 @@
                     #company-selection {
                         font-size: 14px;
                         border-radius: inherit;
+                        padding: 15px;
                     }
                 }
 

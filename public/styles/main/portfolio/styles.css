@@ -48,14 +48,14 @@
   height: fit-content;
 }
 
-#main-portfolio-content main .company-names aside {
+#main-portfolio-content main .company-names aside.company-sel {
   padding: 15px;
   background: #fafafa;
   position: relative;
 }
 
-#main-portfolio-content main .company-names aside #company-selection {
-  padding: 15px;
+#main-portfolio-content main .company-names aside.company-sel #company-selection {
+  padding: 15px 30px 15px 15px;
   font-size: 16px;
   text-transform: uppercase;
   width: 100%;
@@ -69,17 +69,20 @@
   background: #fdfdfd;
 }
 
-#main-portfolio-content main .company-names aside::after {
-  content: '>';
-  font-family: "Consolas", monospace;
-  font-size: 30px;
-  color: #1D1E3B;
-  -webkit-transform: rotate(90deg) translateX(-110%);
-          transform: rotate(90deg) translateX(-110%);
-  right: 15%;
-  top: 50%;
+#main-portfolio-content main .company-names aside.company-sel .arrow-down {
   position: absolute;
+  right: 15px;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: .4s;
+  transition: .4s;
+  font-size: 24px;
   pointer-events: none;
+}
+
+#main-portfolio-content main .company-names aside.company-sel .arrow-down ionicon {
+  color: #333;
 }
 
 #main-portfolio-content main .portfolio-projects {
@@ -221,6 +224,7 @@
   #main-portfolio-content main .company-names aside.company-sel #company-selection {
     font-size: 14px;
     border-radius: inherit;
+    padding: 15px;
   }
   #main-portfolio-content main .company-names aside::after {
     right: 10%;

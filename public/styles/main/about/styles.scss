@@ -93,6 +93,7 @@ section.row-about1 {
 @media screen and (max-width: 480px) {
     section {
         flex-direction: column;
+        height: fit-content;
     }
 
     .cta {
@@ -108,7 +109,7 @@ section.row-about1 {
 
     section.hero {
         justify-content: space-between;
-        height: 100%;
+        height: fit-content;
         margin-top: 50px;
         margin-bottom: 100px;
     
@@ -127,7 +128,11 @@ section.row-about1 {
         }
 
         .hero-img {
-            flex-basis: 100%;
+            flex-basis: 37%;
+
+            img {
+                height: 50%;
+            }
         }
     }
 
@@ -151,6 +156,11 @@ section.row-about1 {
     
         .row-about1-img {
             order: 2;
+            flex-basis: 37%;
+
+            img {
+                height: 50%;
+            }
         }
     }
 }
