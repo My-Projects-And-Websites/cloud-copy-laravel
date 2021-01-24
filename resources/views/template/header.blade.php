@@ -16,14 +16,14 @@
         </div>
     </div>
 </header>
-
-<div class="sidebar" style="margin-left: -250px;">
-    <nav class="sidebar-nav">
-        <ul class="sidebar-nav-links">
-            <li class="sidebar-nav-link-item"><a href="{{ URL::to('/services') }}">Services</a></li>
-            <li class="sidebar-nav-link-item"><a href="{{ URL::to('/about') }}">About</a></li>
-            <li class="sidebar-nav-link-item"><a href="{{ URL::to('/portfolio') }}">Portfolio</a></li>
-            <li class="sidebar-nav-link-item"><a href="{{ URL::to('/contact') }}">Contact</a></li>
+<div class="sidebar">
+    <div class="sidebar-container">
+        <ul class="sidebar-nav">
+            <li><a href="{{ URL::to('/services') }}">Services</a></li>
+            <li><a href="{{ URL::to('/about') }}">About</a></li>
+            <li><a href="{{ URL::to('/portfolio') }}">Portfolio</a></li>
+            <li><a href="{{ URL::to('/contact') }}">Contact</a></li>
         </ul>
-    </nav>
+        <p class="est">Cloud Copy &copy; 2020</p>
+    </div>
 </div>

@@ -1,9 +1,14 @@
 $(function() {
-    $("#hbg").on("click", function() {
-        $(".sidebar").toggle(function() {
-            $(".sidebar").animate({"margin-left" : "-250px"});
-        }, function() {
-            $(".sidebar").animate({"margin-left" : "0px"});
-        });
+    $('#hbg').on('click', function() {
+        if ($('.sidebar').css("marginLeft") == "-275px") {
+            $('.sidebar').animate({
+                "margin-left" : "0px"
+            }, 300);
+        }
+        else {
+            $('.sidebar').animate({
+                "margin-left" : "-275px"
+            }, 300);
+        }
     });
-});
+})
