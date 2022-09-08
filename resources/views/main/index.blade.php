@@ -18,9 +18,7 @@
             </div>
             <div class="hero-img">
                 <div class="hero-img-container">
-                    <div class="hero-img-slide">
-                        <img src="{{ asset('images/carousel1.jpg') }}" alt="cloud copy first image carousel">
-                    </div>
+                    <img src="{{ asset('images/new_carousel1.jpeg') }}" alt="cloud copy first image carousel">
                 </div>
             </div>
         </div>

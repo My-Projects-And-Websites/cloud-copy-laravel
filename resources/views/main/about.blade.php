@@ -14,7 +14,7 @@
             </div>
         </div>
         <div class="hero-img">
-            <img src="{{ asset('images/Neninka Office_Winch Media.jpg') }}" alt="Neninka office">
+            <img src="{{ asset('images/damir.jpeg') }}" alt="Neninka office">
         </div>
     </section>
     <section class="row-about1" data-aos="fade-right" data-aos-duration="1500">

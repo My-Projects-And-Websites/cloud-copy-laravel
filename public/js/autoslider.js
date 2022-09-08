@@ -1,9 +1,9 @@
 $(() => {
-    var galleryImage = $(".hero-img-slide").find("img").first();
+    var galleryImage = $(".hero-img-container").find("img").first();
     var images = [
-        "images/carousel1.jpg",
-        "images/carousel2.jpg",
-        "images/carousel3.jpg"
+        "images/new_carousel1.jpeg",
+        "images/new_carousel2.jpeg",
+        "images/new_carousel3.jpeg"
     ];
 
     var i = 0;
